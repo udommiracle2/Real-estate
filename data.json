@@ -1,0 +1,562 @@
+{
+    "properties": [
+        {
+            "id": "home-001",
+            "title": "Modernist Mirror Villa",
+            "category": "Buy",
+            "subCategory": "Residential",
+            "type": "Villa",
+            "isFeatured": true,
+            "price": 2450000,
+            "location": {
+                "city": "Los Angeles",
+                "area": "Bel Air",
+                "address": "1240 Mirror Lane, CA",
+                "coordinates": {
+                    "lat": 34.0837,
+                    "lng": -118.4467
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/a (1).jpg",
+            "images": [
+                "./src/Real-Estate-Images/a (1).jpg",
+                "./src/Real-Estate-Images/a (2).jpg",
+                "./src/Real-Estate-Images/a (3).jpg",
+                "./src/Real Estate Images/a (4).jpg",
+                "./src/Real-Estate-Images/kitchen (2).jpg",
+                "./src/Real Estate Images/a (5).jpg"
+            ],
+            "shortDescription": "Stunning contemporary villa featuring floor-to-ceiling glass walls and a private lap pool.",
+            "fullDescription": "This architectural masterpiece redefines modern living. Featuring a seamless indoor-outdoor flow, the property boasts a high-end infinity pool, minimalist stone masonry, and a reflective glass facade that blends into the sky.",
+            "specifications": {
+                "area": 4500,
+                "bedrooms": 5,
+                "bathrooms": 6,
+                "furnishing": "Furnished",
+                "floor": 2,
+                "amenities": [
+                    "Pool",
+                    "Garden",
+                    "Smart Home",
+                    "Garage"
+                ]
+            },
+            "agent": {
+                "name": "Sarah Jenkins",
+                "phone": "+1 555-010-9988"
+            },
+            "dateListed": "2026-03-01"
+        },
+        {
+            "id": "home-002",
+            "title": "Grand Neoclassical Estate",
+            "category": "Buy",
+            "subCategory": "Residential",
+            "type": "Villa",
+            "isFeatured": true,
+            "price": 1850000,
+            "location": {
+                "city": "Toronto",
+                "area": "Bridle Path",
+                "address": "88 Heritage Blvd",
+                "coordinates": {
+                    "lat": 43.734,
+                    "lng": -79.363
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/b (1).jpg",
+            "images": [
+                "./src/Real-Estate-Images/b (1).jpg",
+                "./src/Real-Estate-Images/b (2).jpg",
+                "./src/Real-Estate-Images/b (3).jpg",
+                "./src/Real-Estate-Images/bedroom (3).jpg",
+                "./src/Real-Estate-Images/kitchen (7).jpg",
+                "./src/Real-Estate-Images/b (4).jpg"
+            ],
+            "shortDescription": "A symmetrical masterpiece with stone accents and expansive manicured lawns.",
+            "fullDescription": "An elegant family estate featuring classic architecture, multiple garages, and arched windows that provide abundant natural light.",
+            "specifications": {
+                "area": 6200,
+                "bedrooms": 6,
+                "bathrooms": 5,
+                "furnishing": "Unfurnished",
+                "floor": 2,
+                "amenities": [
+                    "3-Car Garage",
+                    "Garden",
+                    "Balcony"
+                ]
+            },
+            "agent": {
+                "name": "Michael Chen",
+                "phone": "+1 555-012-3456"
+            },
+            "dateListed": "2026-02-15"
+        },
+        {
+            "id": "home-003",
+            "title": "Minimalist High-Tech Studio",
+            "category": "Rent",
+            "subCategory": "Residential",
+            "type": "Apartment",
+            "isFeatured": false,
+            "price": 3200,
+            "location": {
+                "city": "Berlin",
+                "area": "Mitte",
+                "address": "Hauptstraße 14",
+                "coordinates": {
+                    "lat": 52.520,
+                    "lng": 13.405
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/c (1).jpg",
+            "images": [
+                "./src/Real-Estate-Images/c (1).jpg",
+                "./src/Real-Estate-Images/c (2).jpg",
+                "./src/Real-Estate-Images/c (3).jpg",
+                "./src/Real-Estate-Images/bedroom (1).jpg",
+                "./src/Real-Estate-Images/bedroom (6).jpg",
+                "./src/Real-Estate-Images/kitchen (1).jpg"
+            ],
+            "shortDescription": "Ultra-modern studio with integrated smart lighting and sleek gallery hallway.",
+            "fullDescription": "Perfect for the modern professional, this apartment features handle-less cabinetry, mood-enhancing LED coving, and an open-concept kitchen with premium appliances.",
+            "specifications": {
+                "area": 850,
+                "bedrooms": 1,
+                "bathrooms": 1,
+                "furnishing": "Semi-Furnished",
+                "floor": 4,
+                "amenities": [
+                    "Smart Lighting",
+                    "Elevator",
+                    "Art Gallery Hallway"
+                ]
+            },
+            "agent": {
+                "name": "Elena Rossi",
+                "phone": "+49 30 123456"
+            },
+            "dateListed": "2026-03-08"
+        },
+        {
+            "id": "home-004",
+            "title": "Scandi-Style Loft with Mezzanine",
+            "category": "Rent",
+            "subCategory": "Residential",
+            "type": "Apartment",
+            "isFeatured": false,
+            "price": 2800,
+            "location": {
+                "city": "Stockholm",
+                "area": "Södermalm",
+                "address": "Linnégatan 42",
+                "coordinates": {
+                    "lat": 59.332,
+                    "lng": 18.068
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/d (6).jpg",
+            "images": [
+                "./src/Real-Estate-Images/d (1).jpg",
+                "./src/Real-Estate-Images/d (2).jpg",
+                "./src/Real-Estate-Images/d (3).jpg",
+                "./src/Real-Estate-Images/d (3).jpg",
+                "./src/Real-Estate-Images/d (4).jpg",
+                "./src/Real-Estate-Images/d (5).jpg"
+            ],
+            "shortDescription": "Bright, airy Nordic design featuring a white timber ladder and mezzanine level.",
+            "fullDescription": "A beautiful example of Scandinavian minimalism. This loft features light wood flooring, high ceilings, and a functional mezzanine perfect for a home office.",
+            "specifications": {
+                "area": 720,
+                "bedrooms": 2,
+                "bathrooms": 1,
+                "furnishing": "Unfurnished",
+                "floor": 3,
+                "amenities": [
+                    "Mezzanine",
+                    "Natural Light",
+                    "Laminate Flooring"
+                ]
+            },
+            "agent": {
+                "name": "Lars Svensson",
+                "phone": "+46 8 555 123"
+            },
+            "dateListed": "2026-03-05"
+        },
+        {
+            "id": "home-005",
+            "title": "Executive Culinary Suite",
+            "category": "Rent",
+            "subCategory": "Commercial",
+            "type": "Office",
+            "isFeatured": false,
+            "price": 4400,
+            "location": {
+                "city": "Chicago",
+                "area": "West Loop",
+                "address": "500 Culinary Plaza",
+                "coordinates": {
+                    "lat": 41.881,
+                    "lng": -87.623
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/e (1).jpg",
+            "images": [
+                "./src/Real-Estate-Images/e (1).jpg",
+                "./src/Real-Estate-Images/e (2).jpg",
+                "./src/Real-Estate-Images/e (3).jpg",
+                "./src/Real-Estate-Images/e (4).jpg",
+                "./src/Real-Estate-Images/living-room (1).jpg",
+                "./src/Real-Estate-Images/bedroom (11).jpg"
+            ],
+            "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
+            "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
+            "specifications": {
+                "area": 1200,
+                "bedrooms": 0,
+                "bathrooms": 2,
+                "furnishing": "Furnished",
+                "floor": 1,
+                "amenities": [
+                    "Chef's Kitchen",
+                    "Showroom Lighting",
+                    "Pantry"
+                ]
+            },
+            "agent": {
+                "name": "Jordan Bell",
+                "phone": "+1 312-555-0199"
+            },
+            "dateListed": "2026-01-20"
+        },
+        {
+            "id": "home-006",
+            "title": "Modernist Mirror Villa",
+            "category": "Buy",
+            "subCategory": "Residential",
+            "type": "Villa",
+            "isFeatured": true,
+            "price": 3650000,
+            "location": {
+                "city": "Los Angeles",
+                "area": "Bel Air",
+                "address": "1240 Mirror Lane, CA",
+                "coordinates": {
+                    "lat": 34.0837,
+                    "lng": -118.4467
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/f (1).jpg",
+            "images": [
+                "./src/Real-Estate-Images/f (1).jpg",
+                "./src/Real-Estate-Images/f (2).jpg",
+                "./src/Real-Estate-Images/f (3).jpg",
+                "./src/Real-Estate-Images/kitchen (3).jpg",
+                "./src/Real-Estate-Images/living-room (2).jpg",
+                "./src/Real-Estate-Images/bedroom (2).jpg"
+            ],
+            "shortDescription": "Stunning contemporary villa featuring floor-to-ceiling glass walls and a private lap pool.",
+            "fullDescription": "This architectural masterpiece redefines modern living. Featuring a seamless indoor-outdoor flow, the property boasts a high-end infinity pool, minimalist stone masonry, and a reflective glass facade that blends into the sky.",
+            "specifications": {
+                "area": 3000,
+                "bedrooms": 7,
+                "bathrooms": 6,
+                "furnishing": "Furnished",
+                "floor": 2,
+                "amenities": [
+                    "Pool",
+                    "Garden",
+                    "Smart Home",
+                    "Garage"
+                ]
+            },
+            "agent": {
+                "name": "Sarah Jenkins",
+                "phone": "+1 555-010-9988"
+            },
+            "dateListed": "2026-03-01"
+        },
+        {
+            "id": "home-007",
+            "title": "Grand Neoclassical Estate",
+            "category": "Buy",
+            "subCategory": "Residential",
+            "type": "Villa",
+            "isFeatured": true,
+            "price": 4650000,
+            "location": {
+                "city": "Toronto",
+                "area": "Bridle Path",
+                "address": "88 Heritage Blvd",
+                "coordinates": {
+                    "lat": 43.734,
+                    "lng": -79.363
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/g (1).jpg",
+            "images": [
+                "./src/Real-Estate-Images/g (1).jpg",
+                "./src/Real-Estate-Images/g (2).jpg",
+                "./src/Real-Estate-Images/g (3).jpg",
+                "./src/Real-Estate-Images/bedroom (3).jpg",
+                "./src/Real-Estate-Images/living-room (3).jpg",
+                "./src/Real-Estate-Images/kitchen (4).jpg"
+            ],
+            "shortDescription": "A symmetrical masterpiece with stone accents and expansive manicured lawns.",
+            "fullDescription": "An elegant family estate featuring classic architecture, multiple garages, and arched windows that provide abundant natural light.",
+            "specifications": {
+                "area": 7500,
+                "bedrooms": 6,
+                "bathrooms": 5,
+                "furnishing": "Unfurnished",
+                "floor": 2,
+                "amenities": [
+                    "3-Car Garage",
+                    "Garden",
+                    "Balcony"
+                ]
+            },
+            "agent": {
+                "name": "Michael Chen",
+                "phone": "+1 555-012-3456"
+            },
+            "dateListed": "2026-02-15"
+        },
+        {
+            "id": "home-008",
+            "title": "Minimalist High-Tech Studio",
+            "category": "Rent",
+            "subCategory": "Residential",
+            "type": "Apartment",
+            "isFeatured": false,
+            "price": 5000,
+            "location": {
+                "city": "Berlin",
+                "area": "Mitte",
+                "address": "Hauptstraße 14",
+                "coordinates": {
+                    "lat": 52.520,
+                    "lng": 13.405
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/h (1).jpg",
+            "images": [
+                "./src/Real-Estate-Images/h (1).jpg",
+                "./src/Real-Estate-Images/h (2).jpg",
+                "./src/Real-Estate-Images/h (3).jpg",
+                "./src/Real-Estate-Images/h (4).jpg",
+                "./src/Real-Estate-Images/living-room (4).jpg",
+                "./src/Real-Estate-Images/kitchen (5).jpg"
+            ],
+            "shortDescription": "Ultra-modern studio with integrated smart lighting and sleek gallery hallway.",
+            "fullDescription": "Perfect for the modern professional, this apartment features handle-less cabinetry, mood-enhancing LED coving, and an open-concept kitchen with premium appliances.",
+            "specifications": {
+                "area": 850,
+                "bedrooms": 1,
+                "bathrooms": 1,
+                "furnishing": "Semi-Furnished",
+                "floor": 4,
+                "amenities": [
+                    "Smart Lighting",
+                    "Elevator",
+                    "Art Gallery Hallway"
+                ]
+            },
+            "agent": {
+                "name": "Elena Rossi",
+                "phone": "+49 30 123456"
+            },
+            "dateListed": "2026-03-08"
+        },
+        {
+            "id": "home-009",
+            "title": "Scandi-Style Loft with Mezzanine",
+            "category": "Rent",
+            "subCategory": "Residential",
+            "type": "Apartment",
+            "isFeatured": false,
+            "price": 2800,
+            "location": {
+                "city": "Stockholm",
+                "area": "Södermalm",
+                "address": "Linnégatan 42",
+                "coordinates": {
+                    "lat": 59.332,
+                    "lng": 18.068
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/i (1).jpg",
+            "images": [
+                "./src/Real-Estate-Images/i (1).jpg",
+                "./src/Real-Estate-Images/i (2).jpg",
+                "./src/Real-Estate-Images/i (3).jpg",
+                "./src/Real-Estate-Images/bedroom (4).jpg",
+                "./src/Real-Estate-Images/bedroom (5).jpg",
+                "./src/Real-Estate-Images/kitchen (5).jpg"
+            ],
+            "shortDescription": "Bright, airy Nordic design featuring a white timber ladder and mezzanine level.",
+            "fullDescription": "A beautiful example of Scandinavian minimalism. This loft features light wood flooring, high ceilings, and a functional mezzanine perfect for a home office.",
+            "specifications": {
+                "area": 720,
+                "bedrooms": 2,
+                "bathrooms": 1,
+                "furnishing": "Unfurnished",
+                "floor": 3,
+                "amenities": [
+                    "Mezzanine",
+                    "Natural Light",
+                    "Laminate Flooring"
+                ]
+            },
+            "agent": {
+                "name": "Lars Svensson",
+                "phone": "+46 8 555 123"
+            },
+            "dateListed": "2026-03-05"
+        },
+        {
+            "id": "home-0010",
+            "title": "Executive Culinary Suite",
+            "category": "Rent",
+            "subCategory": "Commercial",
+            "type": "Office",
+            "isFeatured": false,
+            "price": 5500,
+            "location": {
+                "city": "Chicago",
+                "area": "West Loop",
+                "address": "500 Culinary Plaza",
+                "coordinates": {
+                    "lat": 41.881,
+                    "lng": -87.623
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/j (6).jpg",
+            "images": [
+                "./src/Real-Estate-Images/j (1).jpg",
+                "./src/Real-Estate-Images/j (2).jpg",
+                "./src/Real-Estate-Images/j (3).jpg",
+                "./src/Real-Estate-Images/j (4).jpg",
+                "./src/Real-Estate-Images/j (5).jpg",
+                "./src/Real-Estate-Images/kitchen (6).jpg"
+            ],
+            "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
+            "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
+            "specifications": {
+                "area": 1500,
+                "bedrooms": 0,
+                "bathrooms": 2,
+                "furnishing": "Furnished",
+                "floor": 1,
+                "amenities": [
+                    "Taj Accessories",
+                    "Phone Gallery",
+                    "Device Collection"
+                ]
+            },
+            "agent": {
+                "name": "Jordan One",
+                "phone": "+1 312-885-0155"
+            },
+            "dateListed": "2026-01-25"
+        },
+
+
+
+
+        {
+            "id": "home-0011",
+            "title": "Executive Culinary Suite",
+            "category": "Rent",
+            "subCategory": "Commercial",
+            "type": "Shop",
+            "isFeatured": false,
+            "price": 5500,
+            "location": {
+                "city": "Chicago",
+                "area": "West Loop",
+                "address": "500 Culinary Plaza",
+                "coordinates": {
+                    "lat": 41.881,
+                    "lng": -87.623
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/k (1).jpg",
+            "images": [
+                "./src/Real-Estate-Images/k (1).jpg",
+                "./src/Real-Estate-Images/k (2).jpg",
+                "./src/Real-Estate-Images/k (3).jpg",
+                "./src/Real-Estate-Images/kitchen (7).jpg",
+                "./src/Real-Estate-Images/bedroom (12).jpg",
+                "./src/Real-Estate-Images/bedroom (11).jpg"
+            ],
+            "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
+            "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
+            "specifications": {
+                "area": 1200,
+                "bedrooms": 0,
+                "bathrooms": 2,
+                "furnishing": "Furnished",
+                "floor": 1,
+                "amenities": [
+                    "Chef's Kitchen",
+                    "Showroom Lighting",
+                    "Pantry"
+                ]
+            },
+            "agent": {
+                "name": "Jordan Bell",
+                "phone": "+1 312-555-0199"
+            },
+            "dateListed": "2026-01-20"
+        },
+        {
+            "id": "home-0012",
+            "title": "Executive Culinary Suite",
+            "category": "Rent",
+            "subCategory": "Commercial",
+            "type": "Office",
+            "isFeatured": false,
+            "price": 5500,
+            "location": {
+                "city": "Chicago",
+                "area": "West Loop",
+                "address": "500 Culinary Plaza",
+                "coordinates": {
+                    "lat": 41.881,
+                    "lng": -87.623
+                }
+            },
+            "thumbnail": "./src/Real-Estate-Images/l (1).jpg",
+            "images": [
+                "./src/Real-Estate-Images/l (1).jpg",
+                "./src/Real-Estate-Images/l (2).jpg",
+                "./src/Real-Estate-Images/l (3).jpg",
+                "./src/Real-Estate-Images/l (4).jpg",
+                "./src/Real-Estate-Images/bedroom (7).jpg",
+                "./src/Real-Estate-Images/bedroom (8).jpg"
+            ],
+            "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
+            "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
+            "specifications": {
+                "area": 1200,
+                "bedrooms": 0,
+                "bathrooms": 2,
+                "furnishing": "Furnished",
+                "floor": 1,
+                "amenities": [
+                    "Chef's Kitchen",
+                    "Showroom Lighting",
+                    "Pantry"
+                ]
+            },
+            "agent": {
+                "name": "Jordan Bell",
+                "phone": "+1 312-555-0199"
+            },
+            "dateListed": "2026-01-20"
+        }
+    ]
+}
