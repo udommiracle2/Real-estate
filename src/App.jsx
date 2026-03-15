@@ -1,11 +1,14 @@
 import Navbar from './Components/Navbar'
+import PropertyPage from './Components/PropertyPage'
+
 
 function App() {
 
 
   return (
     <>
-      <Navbar/>
+      <Navbar />
+      <PropertyPage/>
     </>
   )
 }

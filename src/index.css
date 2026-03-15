@@ -4,34 +4,32 @@
 :root {
   font-family: system-ui, Plus Jakarta Sans, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  --btnBackground: #894d15;
+  --btnBackground: #212121;
   --title: #bb6a34;
   --btnColor: #ffff;
   --fontColor: #101010;
-
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
 h1{
   font-weight: 700;
   font-family: "Playfair Display", serif;
   font-size: 70px;
-  color: black;
+  
 }
 h2{
   font-weight: 600;
   font-family: "Playfair Display", serif;
   font-size: 50px;
-  color: #101010;
 }
 h3{
   font-weight: 600;
   font-family: "Playfair Display", serif;
   font-size: 35px;
-  color: var(--fontColor);
+}
+h4{
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
 }
 
 a {
@@ -44,19 +42,100 @@ p{
 
 li{
   list-style: none;
+  cursor: pointer;
+  color: var(--btnColor);
+  transition: 0.3s ease-in;
+}
+
+li:hover{
+  color: var(--title);
+}
+
+.section{
+  padding: 2rem 7rem;
 }
 
 button{
-  padding: 15px;
+  padding: 15px 30px;
   border: none;
   background: var(--btnBackground);
   color: var(--btnColor);
   text-align: center;
   font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover{
+  background: gray;
 }
 
 body {
   margin: 0;
   padding: 0;
+  background: #dddcdcf5;
   box-sizing: border-box;
+}
+
+option{
+  color: var(--fontColor);
+}
+
+i{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+label{
+  margin-right: 0.5rem;
+  font-weight: 500;
+  color: var(--btnColor);
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+
+.slider{
+  margin-top: 16px;
+}
+
+
+select{
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mobile-menu{
+  background: var(--fontColor);
+}
+
+.searchInput{
+  padding: 12px 15px;
+}
+
+#location::placeholder, .searchInput::placeholder{
+  color: #f6f6f6;
+}
+
+.category{
+  font-size: 16px;
+  text-align: right;
+}
+
+.propertyLocation{
+  font-size: 15px;
+  margin-bottom: .9rem;
+}
+
+@media  (max-width: 780px){
+  .section{
+    padding: 2rem 2rem;
+  }
+
+  .filter{
+    display: block;
+  }
 }
