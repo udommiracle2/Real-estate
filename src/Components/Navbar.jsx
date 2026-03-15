@@ -40,7 +40,7 @@ const Navbar = () => {
                     <nav className='hidden lg:flex justify-center items-center'>
                         <ul className="font-medium flex gap-6">
                             <li>Home</li>
-                            <li>Buy/Rent Properties</li>
+                            <li><a href="#property">Buy/Rent Properties</a></li>
                             <li>About Us</li>
                             <li>Services</li>
                             <li>Contact Us</li>
