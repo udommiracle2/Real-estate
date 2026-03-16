@@ -1,4 +1,4 @@
-import wallImg from '../Real-Estate-Images/pexels-expect-best-79873-323780.jpg'
+import wallImg from '../Real-Estate-Images/video.mp4'
 import { useState } from "react";
 
 const Navbar = () => {
@@ -29,7 +29,9 @@ const Navbar = () => {
         <div>
             <section className="hero relative min-h-screen bg-cover">
 
-                <img src={wallImg} alt="" className="absolute w-full h-full object-cover" />
+                <video muted loop className="absolute w-full h-full object-cover">
+                    <source src={wallImg} type="video/mp4" />
+                </video>
                 <div className="absolute inset-0 bg-black/35 flex flex-col justify-center items-center"></div>
 
                 <header className="section relative z-10 text-(--btnColor) flex justify-between">

@@ -19,12 +19,12 @@
             },
             "thumbnail": "/Real-Estate-Images/a(1).jpg",
             "images": [
-                "/Real-Estate-Images/a (1).jpg",
+                "/Real-Estate-Images/a(1).jpg",
                 "/Real-Estate-Images/a (2).jpg",
                 "/Real-Estate-Images/a (3).jpg",
-                "/Real Estate Images/a (4).jpg",
+                "/Real Estate Images/a(4).jpg",
                 "/Real-Estate-Images/kitchen (2).jpg",
-                "/Real Estate Images/a (5).jpg"
+                "/Real Estate Images/a(5).jpg"
             ],
             "shortDescription": "Stunning contemporary villa featuring floor-to-ceiling glass walls and a private lap pool.",
             "fullDescription": "This architectural masterpiece redefines modern living. Featuring a seamless indoor-outdoor flow, the property boasts a high-end infinity pool, minimalist stone masonry, and a reflective glass facade that blends into the sky.",
@@ -35,10 +35,10 @@
                 "furnishing": "Furnished",
                 "floor": 2,
                 "amenities": [
-                    "Pool",
-                    "Garden",
-                    "Smart Home",
-                    "Garage"
+                    "Pool,",
+                    " Garden,",
+                    " Smart Home,",
+                    " Garage"
                 ]
             },
             "agent": {
@@ -66,7 +66,7 @@
             },
             "thumbnail": "/Real-Estate-Images/b(1).jpg",
             "images": [
-                "/Real-Estate-Images/b (1).jpg",
+                "/Real-Estate-Images/b(1).jpg",
                 "/Real-Estate-Images/b (2).jpg",
                 "/Real-Estate-Images/b (3).jpg",
                 "/Real-Estate-Images/bedroom (3).jpg",
@@ -82,8 +82,8 @@
                 "furnishing": "Unfurnished",
                 "floor": 2,
                 "amenities": [
-                    "3-Car Garage",
-                    "Garden",
+                    "3-Car Garage, ",
+                    "Garden, ",
                     "Balcony"
                 ]
             },
@@ -128,8 +128,8 @@
                 "furnishing": "Semi-Furnished",
                 "floor": 4,
                 "amenities": [
-                    "Smart Lighting",
-                    "Elevator",
+                    "Smart Lighting, ",
+                    "Elevator, ",
                     "Art Gallery Hallway"
                 ]
             },
@@ -174,8 +174,8 @@
                 "furnishing": "Unfurnished",
                 "floor": 3,
                 "amenities": [
-                    "Mezzanine",
-                    "Natural Light",
+                    "Mezzanine, ",
+                    "Natural Light, ",
                     "Laminate Flooring"
                 ]
             },
@@ -220,8 +220,8 @@
                 "furnishing": "Furnished",
                 "floor": 1,
                 "amenities": [
-                    "Chef's Kitchen",
-                    "Showroom Lighting",
+                    "Chef's Kitchen, ",
+                    "Showroom Lighting, ",
                     "Pantry"
                 ]
             },
@@ -266,9 +266,9 @@
                 "furnishing": "Furnished",
                 "floor": 2,
                 "amenities": [
-                    "Pool",
-                    "Garden",
-                    "Smart Home",
+                    "Pool, ",
+                    "Garden, ",
+                    "Smart Home, ",
                     "Garage"
                 ]
             },
@@ -313,8 +313,8 @@
                 "furnishing": "Unfurnished",
                 "floor": 2,
                 "amenities": [
-                    "3-Car Garage",
-                    "Garden",
+                    "3-Car Garage, ",
+                    "Garden, ",
                     "Balcony"
                 ]
             },
@@ -359,8 +359,8 @@
                 "furnishing": "Semi-Furnished",
                 "floor": 4,
                 "amenities": [
-                    "Smart Lighting",
-                    "Elevator",
+                    "Smart Lighting, ",
+                    "Elevator, ",
                     "Art Gallery Hallway"
                 ]
             },
@@ -405,8 +405,8 @@
                 "furnishing": "Unfurnished",
                 "floor": 3,
                 "amenities": [
-                    "Mezzanine",
-                    "Natural Light",
+                    "Mezzanine, ",
+                    "Natural Light, ",
                     "Laminate Flooring"
                 ]
             },
@@ -451,8 +451,8 @@
                 "furnishing": "Furnished",
                 "floor": 1,
                 "amenities": [
-                    "Taj Accessories",
-                    "Phone Gallery",
+                    "Taj Accessories, ",
+                    "Phone Gallery, ",
                     "Device Collection"
                 ]
             },
@@ -501,8 +501,8 @@
                 "furnishing": "Furnished",
                 "floor": 1,
                 "amenities": [
-                    "Chef's Kitchen",
-                    "Showroom Lighting",
+                    "Chef's Kitchen, ",
+                    "Showroom Lighting, ",
                     "Pantry"
                 ]
             },
@@ -547,8 +547,8 @@
                 "furnishing": "Furnished",
                 "floor": 1,
                 "amenities": [
-                    "Chef's Kitchen",
-                    "Showroom Lighting",
+                    "Chef's Kitchen, ",
+                    "Showroom Lighting, ",
                     "Pantry"
                 ]
             },
