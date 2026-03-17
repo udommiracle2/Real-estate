@@ -25,7 +25,7 @@ const Contact = () => {
             </div>
 
             <div className="logo mt-5 text-center">
-                <h1>RealEstatePro</h1>
+                <h3>RealEstatePro</h3>
             </div>
         </div>
 
