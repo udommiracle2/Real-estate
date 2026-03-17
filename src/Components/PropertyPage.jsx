@@ -8,7 +8,7 @@ const PropertyPage = ({ filters }) => {
     const properties = data.properties;
 
     const [currentPage, setCurrentPage] = useState(1);
-    
+
     const [selectedProperty, setSelectedProperty] = useState(null);
 
     const [formBtn, setFormBtn] = useState(null);
@@ -41,14 +41,14 @@ const PropertyPage = ({ filters }) => {
 
     const currentProperties = filteredProperties.slice(firstIndex, lastIndex);
 
-    
+
 
     return (
         <div className="section" id="property">
             <div className="flex justify-between items-center">
-                <h3 className="mb-6">
+                <h2 className="mb-6">
                     Buy/Rent Properties
-                </h3>
+                </h2>
 
                 <div className="view flex gap-3 text-xs">
                     <i onClick={() => listBtn("grid")} class="fa-solid fa-grip mr-1.5"></i>
@@ -57,8 +57,8 @@ const PropertyPage = ({ filters }) => {
             </div>
 
 
-            {/* Property Cards */}
-            <div className={`${gridBtn === "grid" ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" : "flex flex-col gap-6" }`}>
+
+            <div className={`${gridBtn === "grid" ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" : "flex flex-col gap-6"}`}>
 
                 {currentProperties.map((property) => (
 
@@ -112,12 +112,12 @@ const PropertyPage = ({ filters }) => {
 
                     </div>
 
-                    
+
                 ))}
 
             </div>
 
-            
+
 
             <div className="flex justify-center gap-4 mt-10">
 
@@ -131,7 +131,7 @@ const PropertyPage = ({ filters }) => {
                 ))}
 
             </div>
-            
+
 
 
             {selectedProperty && (
@@ -139,7 +139,7 @@ const PropertyPage = ({ filters }) => {
 
                     <div className="bg-white rounded-lg w-[90%] max-w-xl p-6 relative overflow-y-auto lg:max-w-3xl h-[96%]">
 
-                        <button onClick={() => { setSelectedProperty(null); setFormBtn(null);}} className="cancel absolute top-3 right-4 text-xl"><i class="fa-solid fa-xmark"></i></button>
+                        <button onClick={() => { setSelectedProperty(null); setFormBtn(null); }} className="cancel absolute top-3 right-4 text-xl"><i class="fa-solid fa-xmark"></i></button>
 
                         <img
                             src={selectedProperty.images[currentImage]}
@@ -151,7 +151,7 @@ const PropertyPage = ({ filters }) => {
                             {selectedProperty.images.map((img, index) => (
 
                                 <img
-                                    key={index} src={img} alt="" onClick={() => setCurrentImg(index)} className={`h-16 w-full object-cover rounded cursor-pointer border ${currentImage === index ? "border-black" : "border-transparent"}`}/>
+                                    key={index} src={img} alt="" onClick={() => setCurrentImg(index)} className={`h-16 w-full object-cover rounded cursor-pointer border ${currentImage === index ? "border-black" : "border-transparent"}`} />
 
                             ))}
                         </div>
@@ -159,8 +159,8 @@ const PropertyPage = ({ filters }) => {
                         <h4 className="title text-xs font-semibold mt-4 mb-2">
                             {selectedProperty.title}
                         </h4>
-                        
-                        
+
+
                         <p className="type text-gray-500 mb-2 font-semibold">Type: {selectedProperty.type}</p>
 
                         <p className="fullDesc mb-2">
@@ -188,7 +188,7 @@ const PropertyPage = ({ filters }) => {
                         </p>
 
                         <div className="flex gap-4 mt-4">
-                            
+
                             <span className="border px-2 py-1 rounded">
                                 🛏 {selectedProperty.specifications.bedrooms}
                             </span>
@@ -222,13 +222,13 @@ const PropertyPage = ({ filters }) => {
                         </h4>
 
                         <form className="flex flex-col gap-3">
-                            <input type="text" placeholder="Full Name" className="border p-2 rounded"/>
+                            <input type="text" placeholder="Full Name" className="border p-2 rounded" />
 
-                            <input type="email" placeholder="Email" className="border p-2 rounded"/>
-                            
+                            <input type="email" placeholder="Email" className="border p-2 rounded" />
+
                             <input type="date" className="border p-2 rounded" name="" id="" />
 
-                            <input type="time" className="border p-2 rounded" placeholder="Time"/>
+                            <input type="time" className="border p-2 rounded" placeholder="Time" />
 
                             <textarea placeholder="Message" className="border p-2 rounded"></textarea>
 
@@ -241,7 +241,7 @@ const PropertyPage = ({ filters }) => {
         </div>
     );
 
-    
+
 };
 
 export default PropertyPage;

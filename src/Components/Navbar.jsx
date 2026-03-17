@@ -1,5 +1,7 @@
 import wallImg from '../Real-Estate-Images/video.mp4'
 import { useState } from "react";
+import { useEffect } from "react";
+
 
 const Navbar = ({setFilters}) => {
     const [location, setLocation] = useState("");
@@ -7,11 +9,14 @@ const Navbar = ({setFilters}) => {
     const [search, setSearch] = useState("");
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(10000000);
+    const [setTitle] = useState("");
+
 
     const handleSearch = (e) => {
         e.preventDefault();
-
-        setFilters({ location, type, minPrice, maxPrice, search });
+        const formData = new FormData(e.target);
+        const searchValue = formData.get("search");
+        setFilters({ location, type, minPrice, maxPrice, search: searchValue, title: searchValue });
     };
 
 
@@ -36,27 +41,36 @@ const Navbar = ({setFilters}) => {
         }
     };
 
+
+    useEffect(() => {
+        if (openMenu) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+    }, [openMenu]);
+
     return (
         <div>
             <section className="hero relative min-h-screen bg-cover">
 
-                <video muted loop className="absolute w-full h-full object-cover">
+                <video autoPlay muted loop className="absolute w-full h-full object-cover">
                     <source src={wallImg} type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-black/35 flex flex-col justify-center items-center"></div>
 
-                <header className="section relative z-10 text-(--btnColor) flex justify-between">
+                <header className="section relative text-(--btnColor) flex justify-between">
                     <div className="logo">
-                        <h4>RealEstatePro</h4>
+                        <h3>RealEstatePro</h3>
                     </div>
 
                     <nav className='hidden lg:flex justify-center items-center'>
                         <ul className="font-medium flex gap-6">
                             <li>Home</li>
                             <li><a href="#property">Buy/Rent Properties</a></li>
-                            <li>About Us</li>
-                            <li>Services</li>
-                            <li>Contact Us</li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#feedback">Feedback</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
                         </ul>
                     </nav>
 
@@ -66,7 +80,7 @@ const Navbar = ({setFilters}) => {
 
                     <nav
                         className={`${openMenu ? 'flex' : 'hidden'} 
-                            lg:hidden absolute bg-black/95 fixed inset-0 w-full h-screen z-40 flex-col justify-center items-center`}
+                            bg-black/95 fixed inset-0 w-full h-screen z-40 flex-col justify-center items-center lg:hidden`}
                     >
                         <ul className="flex flex-col font-medium p-6 gap-8 text-center text-white text-3xl">
                             <li onClick={toggleMenu}>Home</li>
@@ -87,7 +101,7 @@ const Navbar = ({setFilters}) => {
                 
                 <div className="filter section relative text-(--btnColor) flex flex-col lg:flex-row justify-center items-center gap-6">
 
-                    <form className="flex flex-col lg:flex-row items-start lg:items-center gap-4">
+                    <form className="flex flex-col lg:flex-row items-start lg:items-center gap-4" onSubmit={handleSearch}>
 
                         <div>
                             <label>Location</label><br />
@@ -143,20 +157,30 @@ const Navbar = ({setFilters}) => {
                                 ${minPrice.toLocaleString()} - ${maxPrice.toLocaleString()}
                             </p>
                         </div>
+                        
 
-                    </form>
+                        <div className="search py-3">
+                            <input type="search" name="search" id="searchInput" value={search}
+                                onChange={(e) => {
+                                    const value = e.target.value;
+                                    setSearch(value);
+                                    setTitle(value);
+                                    
+                                }}
+                                placeholder='Search' className='searchInput mr-1.5 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg' />
 
-                    <div className="search py-3">
-                        <input type="search" name="" id="searchInput" value={search} onChange={(e) => setSearch(e.target.value)} placeholder='Search' className='searchInput mr-1.5 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg' />
+
+                        </div>
+
                         <button
-                            onClick={handleSearch}
                             type="submit"
                             className="px-6 py-3 bg-[var(--btnBackground)] text-white rounded-lg hover:opacity-90 transition"
                         >
                             Search
                         </button>
+                    </form>
 
-                    </div>
+            
                 
                 </div>
                 
