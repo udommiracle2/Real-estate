@@ -1,7 +1,8 @@
 import { useState } from "react";
 import data from "../data.json";
 
-const PropertyPage = () => {
+const PropertyPage = ({ filters }) => {
+
     const [gridBtn, listBtn] = useState("grid");
 
     const properties = data.properties;
@@ -16,12 +17,31 @@ const PropertyPage = () => {
 
     const propertiesPerPage = 6;
 
+    const filteredProperties = properties.filter((property) => {
+
+        const matchLocation = property.location.city
+            .toLowerCase()
+            .includes(filters.location.toLowerCase());
+
+        const matchType = filters.type ? property.type === filters.type : true;
+
+        const matchPrice =
+            property.price >= filters.minPrice &&
+            property.price <= filters.maxPrice;
+
+        const matchSearch =
+            property.title.toLowerCase().includes(filters.search.toLowerCase());
+
+        return matchLocation && matchType && matchPrice && matchSearch;
+    });
+
+    const totalPages = Math.ceil(filteredProperties.length / propertiesPerPage);
     const lastIndex = currentPage * propertiesPerPage;
     const firstIndex = lastIndex - propertiesPerPage;
 
-    const currentProperties = properties.slice(firstIndex, lastIndex);
+    const currentProperties = filteredProperties.slice(firstIndex, lastIndex);
 
-    const totalPages = Math.ceil(properties.length / propertiesPerPage);
+    
 
     return (
         <div className="section" id="property">

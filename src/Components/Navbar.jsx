@@ -1,15 +1,26 @@
 import wallImg from '../Real-Estate-Images/video.mp4'
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({setFilters}) => {
+    const [location, setLocation] = useState("");
+    const [type, setType] = useState("");
+    const [search, setSearch] = useState("");
+    const [minPrice, setMinPrice] = useState(0);
+    const [maxPrice, setMaxPrice] = useState(10000000);
+
+    const handleSearch = (e) => {
+        e.preventDefault();
+
+        setFilters({ location, type, minPrice, maxPrice, search });
+    };
+
+
+
     const [openMenu, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!openMenu);
     };
-
-    const [minPrice, setMinPrice] = useState(0);
-    const [maxPrice, setMaxPrice] = useState(10000000);
 
     const handleMinChange = (e) => {
         const value = Number(e.target.value);
@@ -84,13 +95,17 @@ const Navbar = () => {
                                 type="text"
                                 placeholder="Enter your city"
                                 id="location"
+                                value={location}
+                                onChange={(e) => setLocation(e.target.value)}
                                 className="text-black mt-1 rounded-lg py-1 px-2 bg-white/20 backdrop-blur-md border border-white/30"
                             />
                         </div>
 
                         <div>
                             <label>Property Type</label><br />
-                            <select className="px-2 py-1 mt-1 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg">
+                            <select
+                                onChange={(e) => setType(e.target.value)}
+                                className="px-2 py-1 mt-1 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg">
                                 <option>-- Options --</option>
                                 <option>Apartment</option>
                                 <option>Villa</option>
@@ -132,8 +147,9 @@ const Navbar = () => {
                     </form>
 
                     <div className="search py-3">
-                        <input type="search" name="" id="searchInput" placeholder='Search' className='searchInput mr-1.5 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg' />
+                        <input type="search" name="" id="searchInput" value={search} onChange={(e) => setSearch(e.target.value)} placeholder='Search' className='searchInput mr-1.5 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg' />
                         <button
+                            onClick={handleSearch}
                             type="submit"
                             className="px-6 py-3 bg-[var(--btnBackground)] text-white rounded-lg hover:opacity-90 transition"
                         >
