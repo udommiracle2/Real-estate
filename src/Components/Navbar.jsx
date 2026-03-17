@@ -55,7 +55,7 @@ const Navbar = () => {
 
                     <nav
                         className={`${openMenu ? 'flex' : 'hidden'} 
-        lg:hidden absolute bg-black/95 fixed inset-0 w-full h-screen z-40 flex-col justify-center items-center`}
+                            lg:hidden absolute bg-black/95 fixed inset-0 w-full h-screen z-40 flex-col justify-center items-center`}
                     >
                         <ul className="flex flex-col font-medium p-6 gap-8 text-center text-white text-3xl">
                             <li onClick={toggleMenu}>Home</li>

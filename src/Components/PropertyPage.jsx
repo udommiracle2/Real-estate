@@ -10,6 +10,8 @@ const PropertyPage = () => {
     
     const [selectedProperty, setSelectedProperty] = useState(null);
 
+    const [formBtn, setFormBtn] = useState(null);
+
     const [currentImage, setCurrentImg] = useState(0);
 
     const propertiesPerPage = 6;
@@ -117,12 +119,7 @@ const PropertyPage = () => {
 
                     <div className="bg-white rounded-lg w-[90%] max-w-xl p-6 relative overflow-y-auto lg:max-w-3xl h-[96%]">
 
-                        <button
-                            onClick={() => setSelectedProperty(null)}
-                            className="cancel absolute top-3 right-4 text-xl"
-                        >
-                            <i class="fa-solid fa-xmark"></i>
-                        </button>
+                        <button onClick={() => { setSelectedProperty(null); setFormBtn(null);}} className="cancel absolute top-3 right-4 text-xl"><i class="fa-solid fa-xmark"></i></button>
 
                         <img
                             src={selectedProperty.images[currentImage]}
@@ -151,7 +148,7 @@ const PropertyPage = () => {
                         </p>
 
                         <p className="address text-gray-500">
-                            {selectedProperty.location.area}, {selectedProperty.location.city}, {selectedProperty.location.address} <br />
+                            <span className="text-[20px] font-semibold text-(--fontColor)">Address: </span>{selectedProperty.location.area}, {selectedProperty.location.city}, {selectedProperty.location.address} <br />
                             <span className="text-(--fontColor) font-semibold">Lat:</span> {selectedProperty.location.coordinates.lat} <span className="text-(--fontColor) font-semibold">Long: </span>{selectedProperty.location.coordinates.lat}
                         </p>
 
@@ -186,9 +183,39 @@ const PropertyPage = () => {
 
                         </div>
 
-                        <button className="mt-2.5">Schedule a Visit</button>
+                        <button onClick={() => setFormBtn(true)} className="mt-2.5">Schedule a Visit</button>
                     </div>
 
+                </div>
+            )}
+
+            {formBtn && (
+                <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+
+                    <div className="bg-white p-6 rounded-lg w-[90%] max-w-md relative">
+
+                        {/* Close button */}
+                        <button onClick={() => setFormBtn(false)} className="cancel absolute top-2 right-3 text-xl"><i class="fa-solid fa-xmark"></i></button>
+
+                        <h4 className="text-lg font-semibold mb-4">
+                            Schedule a Visit
+                        </h4>
+
+                        <form className="flex flex-col gap-3">
+                            <input type="text" placeholder="Full Name" className="border p-2 rounded"/>
+
+                            <input type="email" placeholder="Email" className="border p-2 rounded"/>
+                            
+                            <input type="date" className="border p-2 rounded" name="" id="" />
+
+                            <input type="time" className="border p-2 rounded" placeholder="Time"/>
+
+                            <textarea placeholder="Message" className="border p-2 rounded"></textarea>
+
+                            <button className="bg-green-600 text-white py-2 rounded">Submit</button>
+                        </form>
+
+                    </div>
                 </div>
             )}
         </div>
