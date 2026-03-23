@@ -17,22 +17,32 @@ const PropertyPage = ({ filters }) => {
 
     const propertiesPerPage = 6;
 
+
     const filteredProperties = properties.filter((property) => {
 
         const matchLocation = property.location.city
             .toLowerCase()
-            .includes(filters.location.toLowerCase());
+            .includes((filters.location || "").toLowerCase());
 
         const matchType = filters.type ? property.type === filters.type : true;
 
         const matchPrice =
-            property.price >= filters.minPrice &&
-            property.price <= filters.maxPrice;
+            property.price >= (filters.minPrice ?? 0) &&
+            property.price <= (filters.maxPrice ?? 10000000);
 
-        const matchSearch =
-            property.title.toLowerCase().includes(filters.search.toLowerCase());
+        const matchBedroom =
+            property.specifications.bedrooms >= (filters.minBedroom ?? 0) &&
+            property.specifications.bedrooms <= (filters.maxBedroom ?? 10);
 
-        return matchLocation && matchType && matchPrice && matchSearch;
+        const matchBathrooms =
+            property.specifications.bathrooms >= (filters.minBathrooms ?? 0) &&
+            property.specifications.bathrooms <= (filters.maxBathrooms ?? 10);
+
+        const matchSearch = property.title
+            .toLowerCase()
+            .includes((filters.search || "").toLowerCase());
+
+        return matchLocation && matchType && matchPrice && matchBedroom && matchBathrooms && matchSearch;
     });
 
     const totalPages = Math.ceil(filteredProperties.length / propertiesPerPage);
@@ -95,15 +105,15 @@ const PropertyPage = ({ filters }) => {
                             <div className="flex gap-3 mt-3 text-sm">
 
                                 <span className="border px-2 py-1 rounded">
-                                    🛏 {property.specifications.bedrooms}
+                                    <span className="font-semibold">Bedroom: </span> {property.specifications.bedrooms}
                                 </span>
 
                                 <span className="border px-2 py-1 rounded">
-                                    🛁 {property.specifications.bathrooms}
+                                    <span className="font-semibold">Bathroom: </span> {property.specifications.bathrooms}
                                 </span>
 
                                 <span className="border px-2 py-1 rounded">
-                                    📐 {property.specifications.area} sqft
+                                    <span className="font-semibold">Area: </span> {property.specifications.area} sqft
                                 </span>
 
                             </div>
@@ -169,6 +179,15 @@ const PropertyPage = ({ filters }) => {
 
                         <p className="address text-gray-500">
                             <span className="text-[20px] font-semibold text-(--fontColor)">Address: </span>{selectedProperty.location.area}, {selectedProperty.location.city}, {selectedProperty.location.address} <br />
+                            <iframe src=""
+                                width="400"
+                                height="250"
+                                style={{ border: 0 }}
+                                allowFullScreen=""
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                className='w-full rounded-lg'
+                                frameborder="0"></iframe>
                             <span className="text-(--fontColor) font-semibold">Lat:</span> {selectedProperty.location.coordinates.lat} <span className="text-(--fontColor) font-semibold">Long: </span>{selectedProperty.location.coordinates.lat}
                         </p>
 
@@ -190,15 +209,15 @@ const PropertyPage = ({ filters }) => {
                         <div className="flex gap-4 mt-4">
 
                             <span className="border px-2 py-1 rounded">
-                                🛏 {selectedProperty.specifications.bedrooms}
+                                <span className="font-semibold">Bedroom: </span> {selectedProperty.specifications.bedrooms}
                             </span>
 
                             <span className="border px-2 py-1 rounded">
-                                🛁 {selectedProperty.specifications.bathrooms}
+                                <span className="font-semibold">Bathroom: </span> {selectedProperty.specifications.bathrooms}
                             </span>
 
                             <span className="border px-2 py-1 rounded">
-                                📐 {selectedProperty.specifications.area} sqft
+                                <span className="font-semibold">Area: </span> {selectedProperty.specifications.area} sqft
                             </span>
 
                         </div>

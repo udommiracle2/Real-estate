@@ -9,6 +9,10 @@ const Navbar = ({setFilters}) => {
     const [search, setSearch] = useState("");
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(10000000);
+    const [minBedroom, setMinBedroom] = useState(0);
+    const [maxBedroom, setMaxBedroom] = useState(10);
+    const [minBathrooms, setMinBathrooms] = useState(0);
+    const [maxBathrooms, setMaxBathrooms] = useState(10);
     const [setTitle] = useState("");
 
 
@@ -16,7 +20,7 @@ const Navbar = ({setFilters}) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         const searchValue = formData.get("search");
-        setFilters({ location, type, minPrice, maxPrice, search: searchValue, title: searchValue });
+        setFilters({ location, type, minPrice, maxPrice, minBedroom, maxBedroom, minBathrooms, maxBathrooms, search: searchValue, title: searchValue });
     };
 
 
@@ -38,6 +42,36 @@ const Navbar = ({setFilters}) => {
         const value = Number(e.target.value);
         if (value > minPrice) {
             setMaxPrice(value);
+        }
+    };
+
+
+    const handleMinBedroom = (e) => {
+        const value = Number(e.target.value);
+        if (value < maxBedroom) {
+            setMinBedroom(value);
+        }
+    };
+
+    const handleMaxBedroom = (e) => {
+        const value = Number(e.target.value);
+        if (value > minBedroom) {
+            setMaxBedroom(value);
+        }
+    };
+
+
+    const handleMinBathrooms = (e) => {
+        const value = Number(e.target.value);
+        if (value < maxBathrooms) {
+            setMinBathrooms(value);
+        }
+    };
+
+    const handleMaxBathrooms = (e) => {
+        const value = Number(e.target.value);
+        if (value > minBathrooms) {
+            setMaxBathrooms(value);
         }
     };
 
@@ -99,9 +133,9 @@ const Navbar = ({setFilters}) => {
                     </div>
                 </div>
                 
-                <div className="filter section relative text-(--btnColor) flex flex-col lg:flex-row justify-center items-center gap-6">
+                <div className="filter section relative text-(--btnColor) lg:gap-6">
 
-                    <form className="flex flex-col lg:flex-row items-start lg:items-center gap-4" onSubmit={handleSearch}>
+                    <form className="block flex-col md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 flex-wrap items-start lg:items-center gap-4 justify-center" onSubmit={handleSearch}>
 
                         <div>
                             <label>Location</label><br />
@@ -155,6 +189,67 @@ const Navbar = ({setFilters}) => {
                             </div>
                             <p className="text-center border mt-1 rounded-lg px-2">
                                 ${minPrice.toLocaleString()} - ${maxPrice.toLocaleString()}
+                            </p>
+                        </div>
+
+
+                        <div className="slider flex flex-col justify-center items-start">
+                            <label className="text-left">Bedroom</label>
+
+                            <div className="input flex">
+                                <input
+
+                                    type="range"
+                                    min="0"
+                                    max="10"
+                                    value={minBedroom}
+                                    onChange={handleMinBedroom}
+                                    className="accent-(--fontColor) cursor-pointer"
+                                />
+
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="10"
+                                    value={maxBedroom}
+                                    onChange={handleMaxBedroom}
+                                    className="accent-(--fontColor) cursor-pointer"
+                                />
+
+                            </div>
+                            <p className="text-center border mt-1 rounded-lg px-2">
+                                {minBedroom.toLocaleString()} - {maxBedroom.toLocaleString()}
+                            </p>
+                        </div>
+
+
+
+                        <div className="slider flex flex-col justify-center items-start">
+                            <label className="text-left">Bathroom</label>
+
+                            <div className="input flex">
+                                <input
+
+                                    type="range"
+                                    min="0"
+                                    max="10"
+                                    value={minBathrooms}
+                                    onChange={handleMinBathrooms}
+                                    className="accent-(--fontColor) cursor-pointer"
+                                />
+
+                                <input
+                                    type="range"
+                                    min="0"
+                                    max="10"
+                                    value={maxBathrooms}
+                                    onChange={handleMaxBathrooms}
+                                    className="accent-(--fontColor) cursor-pointer"
+                                />
+
+                            </div>
+                            <p className="text-center border mt-1 rounded-lg px-2">
+                                {minBathrooms.toLocaleString()} - {maxBathrooms.toLocaleString()}
                             </p>
                         </div>
                         
