@@ -8,9 +8,9 @@ const Contact = () => {
             </h2>
                 <p className='text-center'>RealEstatePro are readily available round the clock. Our services travels beyond national boundaries</p>
             <div className='mt-5'>
-                <p><span className='font-semibold text-[22px]'>Email: </span>RealEstatePro@gmail.com</p>
-                <p><span className='font-semibold text-[22px]'>Address: </span>26, Nowhere Avenue, DE, 110543. Nigeria</p>
-                <p><span className='font-semibold text-[22px]'>Telephone: </span>+1 045 321 899</p>
+                <p><span className='font-semibold text-[22px]'><i class="fa-solid fa-envelope mr-3"></i></span>RealEstatePro@gmail.com</p>
+                <p><span className='font-semibold text-[22px]'><i className="text-red-500 mr-3 fa-solid fa-location-dot"></i></span>26, Nowhere Avenue, DE, 110543. Nigeria</p>
+                <p><span className='font-semibold text-[22px]'><i class="fa-solid fa-phone mr-3"></i></span>+1 045 321 899</p>
             </div>
 
             <div className='mt-5'>

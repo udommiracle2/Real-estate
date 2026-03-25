@@ -1,4 +1,5 @@
 import wallImg from '../Real-Estate-Images/video.mp4'
+import logo from '../Real-Estate-Images/logo.png'
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -94,8 +95,9 @@ const Navbar = ({setFilters}) => {
                 <div className="absolute inset-0 bg-black/35 flex flex-col justify-center items-center"></div>
 
                 <header className="section relative text-(--btnColor) flex justify-between">
-                    <div className="logo">
-                        <h3>RealEstatePro</h3>
+                    <div className="logo flex">
+                        <img src={logo} className='h-10 rounded-[50%]' alt="" />
+                        <h4 className='ml-1'>RealEstatePro</h4>
                     </div>
 
                     <nav className='hidden lg:flex justify-center items-center'>
@@ -116,7 +118,7 @@ const Navbar = ({setFilters}) => {
                         className={`${openMenu ? 'flex' : 'hidden'} 
                             bg-black/95 fixed inset-0 w-full h-screen z-40 flex-col justify-center items-center lg:hidden`}
                     >
-                        <ul className="flex flex-col font-medium p-6 gap-8 text-center text-white text-3xl">
+                        <ul className="openMenu flex flex-col font-medium p-6 gap-8 text-center text-white text-3xl">
                             <li onClick={toggleMenu}>Home</li>
                             <li onClick={toggleMenu}>Buy/Rent Properties</li>
                             <li onClick={toggleMenu}>About Us</li>
@@ -129,7 +131,11 @@ const Navbar = ({setFilters}) => {
                 <div className="banner section relative text-center flex flex-col m-auto lg:w-[70%] relative z-10 text-(--btnColor)">
                     <div className="banner-desc">
                         <h2 className="text-3xl lg:text-5xl font-bold leading-tight">Discover your homes built on trust and elegance.</h2>
-                        <p className='text-left lg:text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit non nulla ullam.</p>
+                        <p className='text-left mt-2 lg:text-center'>you are choosing more than a property.
+                            You are choosing quality, trust, and excellence.
+                            Let us help you find a place you truly belong.
+                            A place that reflects your lifestyle and aspirations.
+                            Your journey to a better home starts with us</p>
                     </div>
                 </div>
                 
@@ -174,7 +180,7 @@ const Navbar = ({setFilters}) => {
                                     max="10000000"
                                     value={minPrice}
                                     onChange={handleMinChange}
-                                    className="accent-(--fontColor) cursor-pointer"
+                                    className="cursor-pointer accent-gray-300"
                                 />
 
                                 <input
@@ -183,7 +189,7 @@ const Navbar = ({setFilters}) => {
                                     max="10000000"
                                     value={maxPrice}
                                     onChange={handleMaxChange}
-                                    className="accent-(--fontColor) cursor-pointer"
+                                    className="cursor-pointer accent-gray-300"
                                 />
 
                             </div>
@@ -204,7 +210,7 @@ const Navbar = ({setFilters}) => {
                                     max="10"
                                     value={minBedroom}
                                     onChange={handleMinBedroom}
-                                    className="accent-(--fontColor) cursor-pointer"
+                                    className="cursor-pointer accent-gray-300"
                                 />
 
                                 <input
@@ -213,7 +219,7 @@ const Navbar = ({setFilters}) => {
                                     max="10"
                                     value={maxBedroom}
                                     onChange={handleMaxBedroom}
-                                    className="accent-(--fontColor) cursor-pointer"
+                                    className="cursor-pointer accent-gray-300"
                                 />
 
                             </div>
@@ -235,7 +241,7 @@ const Navbar = ({setFilters}) => {
                                     max="10"
                                     value={minBathrooms}
                                     onChange={handleMinBathrooms}
-                                    className="accent-(--fontColor) cursor-pointer"
+                                    className="accent-gray-300 cursor-pointer"
                                 />
 
                                 <input
@@ -244,7 +250,7 @@ const Navbar = ({setFilters}) => {
                                     max="10"
                                     value={maxBathrooms}
                                     onChange={handleMaxBathrooms}
-                                    className="accent-(--fontColor) cursor-pointer"
+                                    className="accent-gray-300 cursor-pointer"
                                 />
 
                             </div>

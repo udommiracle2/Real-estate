@@ -22,7 +22,7 @@ const Feedback = () => {
 
                 <form action="" method="post" className=''>
 
-                    <textarea placeholder="Message" className="border p-2 rounded w-[50%] h-[144px]"></textarea><br />
+                    <textarea placeholder="Message" className="border p-2 rounded w-[70%] lg:w-[50%] h-[144px]"></textarea><br />
 
                     <button>Submit</button>
                 </form>
