@@ -132,17 +132,12 @@ const PropertyPage = ({ filters }) => {
 
 
 
-            <div className="flex justify-center gap-4 mt-10">
-
+            <div className="flex justify-center gap-3 mt-8">
                 {[...Array(totalPages)].map((_, index) => (
-                    <button
-                        key={index}
-                        onClick={() => setCurrentPage(index + 1)}
-                        className={`px-1 py-1 rounded ${currentPage === index + 1 ? "bg-(--fontColor) text-(--btnColor)" : "bg-gray-200"}`}>
+                    <div key={index} onClick={() => setCurrentPage(index + 1)} className={`cursor-pointer rounded-[50%] px-4 py-2 border bg-(--btnBackground) text-(--btnColor) hover:bg-(--btnBackground) hover:border-(--btnBackground) hover:text-(--btnColor) ${currentPage === index + 1 ? "bg-(--btnBackground) text-(--btnColor)" : "text-black bg-(--btnColor)"}`}>
                         {index + 1}
-                    </button>
+                    </div>
                 ))}
-
             </div>
 
 
