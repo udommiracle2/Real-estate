@@ -11,7 +11,7 @@ const About = () => {
             <div className='relative section grid lg:grid-cols-2 gap-10 items-center min-h-screen text-white'>
 
                 <div>
-                    <h2 className='text-4xl font-bold mb-4'>About Us</h2>
+                    <h3 className='text-4xl font-bold mb-4'>About Us</h3>
 
                     <p className='text-lg leading-relaxed max-w-lg'>
                         To redefine modern living through timeless architecture and thoughtful design.

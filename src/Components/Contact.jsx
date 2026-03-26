@@ -3,9 +3,9 @@ import React from 'react'
 const Contact = () => {
     return (
         <div className='section bg-(--btnBackground) text-(--btnColor)' id='contact'>
-            <h2 className='text-center'>
+            <h3 className='text-center'>
                 Contact Us
-            </h2>
+            </h3>
                 <p className='text-center'>RealEstatePro are readily available round the clock. Our services travels beyond national boundaries</p>
             <div className='mt-5'>
                 <p><span className='font-semibold text-[22px]'><i class="fa-solid fa-envelope mr-3"></i></span>RealEstatePro@gmail.com</p>

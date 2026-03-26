@@ -7,7 +7,7 @@ const Feedback = () => {
     return (
         <div className='section border-t-2' id='feedback'>
             <div>
-                <h2>Feedback</h2>
+                <h3>Feedback</h3>
             </div>
 
             <div>
