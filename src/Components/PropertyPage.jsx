@@ -177,7 +177,7 @@ const PropertyPage = ({ filters }) => {
 
                         <p className="address text-gray-500">
                             <span className="text-[20px] font-semibold text-(--fontColor)">Address: </span>{selectedProperty.location.area}, {selectedProperty.location.city}, {selectedProperty.location.address} <br />
-                            <iframe src=""
+                            <iframe src={selectedProperty.iframe}
                                 width="400"
                                 height="250"
                                 style={{ border: 0 }}

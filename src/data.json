@@ -8,6 +8,7 @@
             "type": "Villa",
             "isFeatured": true,
             "price": 2450000,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23785.608533494124!2d-87.88558894903215!3d41.823968346485614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e4b69becff739%3A0x3e4e2023fdba6074!2sBrookfield%2C%20IL%2060513%2C%20USA!5e0!3m2!1sen!2sng!4v1774565998406!5m2!1sen!2sng",
             "location": {
                 "city": "Los Angeles",
                 "area": "Bel Air",
@@ -55,6 +56,7 @@
             "type": "Villa",
             "isFeatured": true,
             "price": 1850000,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.05361633777!2d-118.74208543086958!3d34.020606560935235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1774566183894!5m2!1sen!2sng",
             "location": {
                 "city": "Toronto",
                 "area": "Bridle Path",
@@ -101,6 +103,7 @@
             "type": "Apartment",
             "isFeatured": false,
             "price": 3200,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.05361633777!2d-118.74208543086958!3d34.020606560935235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1774566183894!5m2!1sen!2sng",
             "location": {
                 "city": "Berlin",
                 "area": "Mitte",
@@ -147,6 +150,7 @@
             "type": "Apartment",
             "isFeatured": false,
             "price": 2800,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23785.608533494124!2d-87.88558894903215!3d41.823968346485614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e4b69becff739%3A0x3e4e2023fdba6074!2sBrookfield%2C%20IL%2060513%2C%20USA!5e0!3m2!1sen!2sng!4v1774565998406!5m2!1sen!2sng",
             "location": {
                 "city": "Stockholm",
                 "area": "Södermalm",
@@ -193,6 +197,7 @@
             "type": "Plot",
             "isFeatured": false,
             "price": 29000,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d507401.6278018412!2d3.4445267203336205!3d6.512163684697327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf75df5c74367%3A0x6a7e7df9d6c1cd4a!2sLekki%2C%20Lagos!5e0!3m2!1sen!2sng!4v1774566345996!5m2!1sen!2sng",
             "location": {
                 "city": "Lagos",
                 "area": "Lekki",
@@ -237,6 +242,7 @@
             "type": "Villa",
             "isFeatured": true,
             "price": 3650000,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23785.608533494124!2d-87.88558894903215!3d41.823968346485614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e4b69becff739%3A0x3e4e2023fdba6074!2sBrookfield%2C%20IL%2060513%2C%20USA!5e0!3m2!1sen!2sng!4v1774565998406!5m2!1sen!2sng",
             "location": {
                 "city": "Los Angeles",
                 "area": "Bel Air",
@@ -284,6 +290,7 @@
             "type": "Villa",
             "isFeatured": true,
             "price": 4650000,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23785.608533494124!2d-87.88558894903215!3d41.823968346485614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e4b69becff739%3A0x3e4e2023fdba6074!2sBrookfield%2C%20IL%2060513%2C%20USA!5e0!3m2!1sen!2sng!4v1774565998406!5m2!1sen!2sng",
             "location": {
                 "city": "Toronto",
                 "area": "Bridle Path",
@@ -330,6 +337,7 @@
             "type": "Apartment",
             "isFeatured": false,
             "price": 10300,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23785.608533494124!2d-87.88558894903215!3d41.823968346485614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e4b69becff739%3A0x3e4e2023fdba6074!2sBrookfield%2C%20IL%2060513%2C%20USA!5e0!3m2!1sen!2sng!4v1774565998406!5m2!1sen!2sng",
             "location": {
                 "city": "Frankfurt",
                 "area": "Mitte",
@@ -376,6 +384,7 @@
             "type": "Apartment",
             "isFeatured": false,
             "price": 2800,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23785.608533494124!2d-87.88558894903215!3d41.823968346485614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e4b69becff739%3A0x3e4e2023fdba6074!2sBrookfield%2C%20IL%2060513%2C%20USA!5e0!3m2!1sen!2sng!4v1774565998406!5m2!1sen!2sng",
             "location": {
                 "city": "Uppsala",
                 "area": "Södem",
@@ -422,6 +431,7 @@
             "type": "Office",
             "isFeatured": false,
             "price": 5500,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23785.608533494124!2d-87.88558894903215!3d41.823968346485614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e4b69becff739%3A0x3e4e2023fdba6074!2sBrookfield%2C%20IL%2060513%2C%20USA!5e0!3m2!1sen!2sng!4v1774565998406!5m2!1sen!2sng",
             "location": {
                 "city": "New York",
                 "area": "Harlem",
@@ -468,6 +478,7 @@
             "type": "Office",
             "isFeatured": false,
             "price": 8000,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.05361633777!2d-118.74208543086958!3d34.020606560935235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1774566183894!5m2!1sen!2sng",
             "location": {
                 "city": "New York",
                 "area": "Harlem",
@@ -512,6 +523,7 @@
             "type": "Apartment",
             "isFeatured": false,
             "price": 5500,
+            "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.05361633777!2d-118.74208543086958!3d34.020606560935235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1774566183894!5m2!1sen!2sng",
             "location": {
                 "city": "Vancouver",
                 "area": "Montreal",
@@ -558,6 +570,7 @@
                 "type": "Apartment",
                 "isFeatured": false,
                 "price": 5500,
+                "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.05361633777!2d-118.74208543086958!3d34.020606560935235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1774566183894!5m2!1sen!2sng",
                 "location": {
                     "city": "Los Angeles",
                     "area": "West Indie",
@@ -604,6 +617,7 @@
                     "type": "Shop",
                     "isFeatured": false,
                     "price": 4999.99,
+                    "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.05361633777!2d-118.74208543086958!3d34.020606560935235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1774566183894!5m2!1sen!2sng",
                     "location": {
                         "city": "Chicago",
                         "area": "West Loop",
@@ -646,13 +660,14 @@
                     "type": "Apartment",
                     "isFeatured": false,
                     "price": 20000,
+                    "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.05361633777!2d-118.74208543086958!3d34.020606560935235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1774566183894!5m2!1sen!2sng",
                     "location": {
                         "city": "Uppsala",
                         "area": "Södem",
                         "address": "Skåne 08",
                         "coordinates": {
                             "lat": 59.332,
-                            "lng": 18.068
+ git                           "lng": 18.068
                         }
                     },
                     "thumbnail": "/Real-Estate-Images/e (1).jpg",
