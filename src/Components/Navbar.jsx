@@ -13,6 +13,7 @@ const Navbar = ({setFilters}) => {
     const [minBedroom, setMinBedroom] = useState(0);
     const [maxBedroom, setMaxBedroom] = useState(10);
     const [minBathrooms, setMinBathrooms] = useState(0);
+    const [furnishing, setFurnishing] = useState("");
     const [maxBathrooms, setMaxBathrooms] = useState(10);
     const [setTitle] = useState("");
 
@@ -21,7 +22,7 @@ const Navbar = ({setFilters}) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         const searchValue = formData.get("search");
-        setFilters({ location, type, minPrice, maxPrice, minBedroom, maxBedroom, minBathrooms, maxBathrooms, search: searchValue, title: searchValue });
+        setFilters({ location, type, furnishing, minPrice, maxPrice, minBedroom, maxBedroom, minBathrooms, maxBathrooms, search: searchValue, title: searchValue });
     };
 
 
@@ -102,7 +103,7 @@ const Navbar = ({setFilters}) => {
 
                     <nav className='hidden lg:flex justify-center items-center'>
                         <ul className="font-medium flex gap-6">
-                            <li>Home</li>
+                            <li><a href="#">Home</a></li>
                             <li><a href="#property">Buy/Rent Properties</a></li>
                             <li><a href="#about">About Us</a></li>
                             <li><a href="#feedback">Feedback</a></li>
@@ -155,20 +156,35 @@ const Navbar = ({setFilters}) => {
                             />
                         </div>
 
-                        <div>
+                        <div className='mt-2 lg:mt-0 md:mt-0'>
                             <label>Property Type</label><br />
                             <select
                                 onChange={(e) => setType(e.target.value)}
-                                className="px-2 py-1 mt-1 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg">
-                                <option>-- Options --</option>
+                                className="px-2 py-1 mt-1 mr-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg">
+                                <option>All</option>
                                 <option>Apartment</option>
                                 <option>Villa</option>
                                 <option>Plot</option>
                                 <option>Office</option>
                                 <option>Shop</option>
                             </select>
+                            <select className='px-2 py-1 mt-2 mr-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg'
+                                onChange={(e) => setType(e.target.value)}>
+                                <option value="">All</option>
+                                <option value="rent">Rent</option>
+                                <option value="sale">Sale</option>
+                            </select>
+
+                            <select className='px-2 py-1 mt-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg'
+                                onChange={(e) => setFurnishing(e.target.value)}>
+                                <option value="">All</option>
+                                <option value="finished">Finished</option>
+                                <option value="unfinished">Unfinished</option>
+                            </select>
+
                         </div>
 
+                       
                         <div className="slider flex flex-col justify-center items-start">
                             <label className="text-left">Price Range</label>
 

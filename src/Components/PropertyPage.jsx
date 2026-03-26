@@ -20,29 +20,38 @@ const PropertyPage = ({ filters }) => {
 
     const filteredProperties = properties.filter((property) => {
 
-        const matchLocation = property.location.city
-            .toLowerCase()
-            .includes((filters.location || "").toLowerCase());
+        const matchLocation = `${property.location.city} ${property.location.area} ${property.location.address}`.toLowerCase().includes((filters.location || "").toLowerCase());
+        
+        const matchType = filters.type ? property.type.toLowerCase() === filters.type.toLowerCase(): true;
 
-        const matchType = filters.type ? property.type === filters.type : true;
+        const matchFurnishing = filters.furnishing ? property.specifications.furnishing.toLowerCase() === filters.furnishing.toLowerCase(): true;
 
-        const matchPrice =
-            property.price >= (filters.minPrice ?? 0) &&
-            property.price <= (filters.maxPrice ?? 10000000);
+        const matchPrice = property.price >= (filters.minPrice ?? 0) && property.price <= (filters.maxPrice ?? 10000000);
 
-        const matchBedroom =
-            property.specifications.bedrooms >= (filters.minBedroom ?? 0) &&
-            property.specifications.bedrooms <= (filters.maxBedroom ?? 10);
+        const matchBedroom = property.specifications.bedrooms >= (filters.minBedroom ?? 0) && property.specifications.bedrooms <= (filters.maxBedroom ?? 10);
 
-        const matchBathrooms =
-            property.specifications.bathrooms >= (filters.minBathrooms ?? 0) &&
-            property.specifications.bathrooms <= (filters.maxBathrooms ?? 10);
+        const matchBathrooms = property.specifications.bathrooms >= (filters.minBathrooms ?? 0) && property.specifications.bathrooms <= (filters.maxBathrooms ?? 10);
 
-        const matchSearch = property.title
-            .toLowerCase()
-            .includes((filters.search || "").toLowerCase());
+        const searchValue = (filters.search || "").toLowerCase().trim();
 
-        return matchLocation && matchType && matchPrice && matchBedroom && matchBathrooms && matchSearch;
+        const searchableText = `
+                ${property.title}
+                ${property.location.city}
+                ${property.location.area}
+                ${property.location.address}
+                ${property.category}
+                ${property.type}
+                ${property.specifications.bedrooms}bhk
+                ${property.specifications.bedrooms} bedroom
+                ${property.specifications.bathrooms} bathroom
+                ${property.specifications.amenities}
+                ${property.specifications.furnishing}
+                `.toLowerCase();
+
+        const matchSearch = searchableText.includes(searchValue);
+        
+        
+        return matchLocation && matchType && matchFurnishing && matchPrice && matchBedroom && matchBathrooms && matchSearch;
     });
 
     const totalPages = Math.ceil(filteredProperties.length / propertiesPerPage);
@@ -56,9 +65,9 @@ const PropertyPage = ({ filters }) => {
     return (
         <div className="section" id="property">
             <div className="flex justify-between items-center">
-                <h2 className="mb-6">
+                <h3 className="mb-6">
                     Buy/Rent Properties
-                </h2>
+                </h3>
 
                 <div className="view flex gap-3 text-xs">
                     <i onClick={() => listBtn("grid")} class="fa-solid fa-grip mr-1.5"></i>
@@ -70,61 +79,55 @@ const PropertyPage = ({ filters }) => {
 
             <div className={`${gridBtn === "grid" ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" : "flex flex-col gap-6"}`}>
 
-                {currentProperties.map((property) => (
-
-                    <div
-                        key={property.id}
-                        onClick={() => {
-                            setSelectedProperty(property);
-                            setCurrentImg(0);
-                        }}
-                        className="bg-white rounded shadow-sm overflow-hidden hover:shadow-md cursor-pointer transition"
-                    >
-                        <img src={property.thumbnail} alt={property.title} loading="lazy" className="w-full h-56 object-cover" />
-
-                        <div className="p-4">
-
-                            <div className="flex justify-between">
-                                <h4 className="font-semibold">
-                                    {property.title}
-                                </h4>
-
-                                <p className="font-semibold text-green-600">
-                                    ${property.price.toLocaleString()}
-                                </p>
-                            </div>
-
-                            <p className="text-gray-500 text-sm propertyLocation">
-                                {property.location.area}, {property.location.city}, {property.location.address}
-                            </p>
-
-                            <p className="category font-medium text-[18px]">
-                                Category: {property.category}
-                            </p>
-
-                            <div className="flex gap-3 mt-3 text-sm">
-
-                                <span className="border px-2 py-1 rounded">
-                                    <span className="font-semibold">Bedroom: </span> {property.specifications.bedrooms}
-                                </span>
-
-                                <span className="border px-2 py-1 rounded">
-                                    <span className="font-semibold">Bathroom: </span> {property.specifications.bathrooms}
-                                </span>
-
-                                <span className="border px-2 py-1 rounded">
-                                    <span className="font-semibold">Area: </span> {property.specifications.area} sqft
-                                </span>
-
-                            </div>
-
-                        </div>
-
+                {filteredProperties.length === 0 ? (
+                    <div className="col-span-full text-center py-10 text-gray-500">
+                        <h4 className="text-lg font-semibold">No properties found 😔</h4>
+                        <p>Try adjusting your search or filters</p>
                     </div>
+                ) : (
+                    currentProperties.map((property) => (
+                        <div
+                            key={property.id}
+                            onClick={() => {
+                                setSelectedProperty(property);
+                                setCurrentImg(0);
+                            }}
+                            className="bg-white rounded shadow-sm overflow-hidden hover:shadow-md cursor-pointer transition"
+                        >
+                            <img src={property.thumbnail} alt={property.title} className="w-full h-56 object-cover" />
 
+                            <div className="p-4">
+                                <div className="flex justify-between">
+                                    <h4 className="font-semibold">{property.title}</h4>
+                                    <p className="font-semibold text-green-600">
+                                        ${property.price.toLocaleString()}
+                                    </p>
+                                </div>
 
-                ))}
+                                <p className="text-gray-500 text-sm">
+                                    {property.location.area}, {property.location.city}, {property.location.address}
+                                </p>
 
+                                <div className="flex gap-3 mt-3 text-sm">
+
+                                    <span className="border px-2 py-1 rounded">
+                                        <span className="font-semibold">Bedroom: </span>{property.specifications.bedrooms}
+                                    </span>
+
+                                    <span className="border px-2 py-1 rounded">
+                                        <span className="font-semibold">Bathroom: </span>{property.specifications.bathrooms}
+                                    </span>
+
+                                    <span className="border px-2 py-1 rounded">
+                                        <span className="font-semibold">Area: </span>{property.specifications.area} sqft
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    ))
+                )}
             </div>
 
 

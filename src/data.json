@@ -22,9 +22,9 @@
                 "/Real-Estate-Images/a(1).jpg",
                 "/Real-Estate-Images/a (2).jpg",
                 "/Real-Estate-Images/a (3).jpg",
-                "/Real Estate Images/a(4).jpg",
+                "/Real-Estate-Images/a (4).jpg",
                 "/Real-Estate-Images/kitchen (2).jpg",
-                "/Real Estate Images/a(5).jpg"
+                "/Real-Estate-Images/a (5).jpg"
             ],
             "shortDescription": "Stunning contemporary villa featuring floor-to-ceiling glass walls and a private lap pool.",
             "fullDescription": "This architectural masterpiece redefines modern living. Featuring a seamless indoor-outdoor flow, the property boasts a high-end infinity pool, minimalist stone masonry, and a reflective glass facade that blends into the sky.",
@@ -187,47 +187,45 @@
         },
         {
             "id": "home-005",
-            "title": "Executive Culinary Suite",
-            "category": "Rent",
+            "title": "4 Acres of Land",
+            "category": "Sale",
             "subCategory": "Commercial",
-            "type": "Office",
+            "type": "Plot",
             "isFeatured": false,
-            "price": 4400,
+            "price": 29000,
             "location": {
-                "city": "Chicago",
-                "area": "West Loop",
-                "address": "500 Culinary Plaza",
+                "city": "Lagos",
+                "area": "Lekki",
+                "address": "70 ary Street",
                 "coordinates": {
                     "lat": 41.881,
                     "lng": -87.623
                 }
             },
-            "thumbnail": "/Real-Estate-Images/e (1).jpg",
+            "thumbnail": "/Real-Estate-Images/land (3).jpg",
             "images": [
-                "/Real-Estate-Images/e (1).jpg",
-                "/Real-Estate-Images/e (2).jpg",
-                "/Real-Estate-Images/e (3).jpg",
-                "/Real-Estate-Images/e (4).jpg",
-                "/Real-Estate-Images/living-room (1).jpg",
-                "/Real-Estate-Images/bedroom (11).jpg"
+                "/Real-Estate-Images/land (1).jpg",
+                "/Real-Estate-Images/land (2).jpg",
+                "/Real-Estate-Images/land (3).jpg",
+                "/Real-Estate-Images/land (4).jpg",
+                "/Real-Estate-Images/land (5).jpg",
+                "/Real-Estate-Images/land (6).jpg"
             ],
             "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
             "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
             "specifications": {
-                "area": 1200,
+                "area": 4200,
                 "bedrooms": 0,
-                "bathrooms": 2,
-                "furnishing": "Furnished",
-                "floor": 1,
+                "bathrooms": 0,
+                "furnishing": null,
+                "floor": null,
                 "amenities": [
-                    "Chef's Kitchen, ",
-                    "Showroom Lighting, ",
-                    "Pantry"
+                    null
                 ]
             },
             "agent": {
-                "name": "Jordan Bell",
-                "phone": "+1 312-555-0199"
+                "name": "Giannis",
+                "phone": "+1 692-333-0144"
             },
             "dateListed": "2026-01-20"
         },
@@ -331,11 +329,11 @@
             "subCategory": "Residential",
             "type": "Apartment",
             "isFeatured": false,
-            "price": 5000,
+            "price": 10300,
             "location": {
-                "city": "Berlin",
+                "city": "Frankfurt",
                 "area": "Mitte",
-                "address": "Hauptstraße 14",
+                "address": "Hauptstraße 63",
                 "coordinates": {
                     "lat": 52.520,
                     "lng": 13.405
@@ -354,8 +352,8 @@
             "fullDescription": "Perfect for the modern professional, this apartment features handle-less cabinetry, mood-enhancing LED coving, and an open-concept kitchen with premium appliances.",
             "specifications": {
                 "area": 850,
-                "bedrooms": 1,
-                "bathrooms": 1,
+                "bedrooms": 3,
+                "bathrooms": 2,
                 "furnishing": "Semi-Furnished",
                 "floor": 4,
                 "amenities": [
@@ -372,22 +370,22 @@
         },
         {
             "id": "home-009",
-            "title": "Scandi-Style Loft with Mezzanine",
-            "category": "Rent",
+            "title": "Scandi-Style Mansion",
+            "category": "Sale",
             "subCategory": "Residential",
             "type": "Apartment",
             "isFeatured": false,
             "price": 2800,
             "location": {
-                "city": "Stockholm",
-                "area": "Södermalm",
-                "address": "Linnégatan 42",
+                "city": "Uppsala",
+                "area": "Södem",
+                "address": "Skåne 42",
                 "coordinates": {
                     "lat": 59.332,
                     "lng": 18.068
                 }
             },
-            "thumbnail": "/Real-Estate-Images/i (1).jpg",
+            "thumbnail": "/Real-Estate-Images/i (2).jpg",
             "images": [
                 "/Real-Estate-Images/i (1).jpg",
                 "/Real-Estate-Images/i (2).jpg",
@@ -418,29 +416,29 @@
         },
         {
             "id": "home-0010",
-            "title": "Executive Culinary Suite",
+            "title": "Executive Office Suite",
             "category": "Rent",
             "subCategory": "Commercial",
             "type": "Office",
             "isFeatured": false,
             "price": 5500,
             "location": {
-                "city": "Chicago",
-                "area": "West Loop",
-                "address": "500 Culinary Plaza",
+                "city": "New York",
+                "area": "Harlem",
+                "address": "28 Midrive Ave",
                 "coordinates": {
                     "lat": 41.881,
                     "lng": -87.623
                 }
             },
-            "thumbnail": "/Real-Estate-Images/j (6).jpg",
+            "thumbnail": "/Real-Estate-Images/office (6).jpg",
             "images": [
-                "/Real-Estate-Images/j (1).jpg",
-                "/Real-Estate-Images/j (2).jpg",
-                "/Real-Estate-Images/j (3).jpg",
-                "/Real-Estate-Images/j (4).jpg",
-                "/Real-Estate-Images/j (5).jpg",
-                "/Real-Estate-Images/kitchen (6).jpg"
+                "/Real-Estate-Images/office (1).jpg",
+                "/Real-Estate-Images/office (2).jpg",
+                "/Real-Estate-Images/office (3).jpg",
+                "/Real-Estate-Images/office (4).jpg",
+                "/Real-Estate-Images/office (5).jpg",
+                "/Real-Estate-Images/office (6).jpg"
             ],
             "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
             "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
@@ -462,55 +460,93 @@
             },
             "dateListed": "2026-01-25"
         },
-
-
-
-
-        {
+  {
             "id": "home-0011",
-            "title": "Executive Culinary Suite",
+            "title": "Executive Office Suite",
             "category": "Rent",
             "subCategory": "Commercial",
-            "type": "Shop",
+            "type": "Office",
             "isFeatured": false,
-            "price": 5500,
+            "price": 8000,
             "location": {
-                "city": "Chicago",
-                "area": "West Loop",
-                "address": "500 Culinary Plaza",
+                "city": "New York",
+                "area": "Harlem",
+                "address": "39 Midrive Ave",
                 "coordinates": {
                     "lat": 41.881,
                     "lng": -87.623
                 }
             },
-            "thumbnail": "/Real-Estate-Images/k (1).jpg",
+            "thumbnail": "/Real-Estate-Images/office (7).jpg",
             "images": [
-                "/Real-Estate-Images/k (1).jpg",
-                "/Real-Estate-Images/k (2).jpg",
-                "/Real-Estate-Images/k (3).jpg",
-                "/Real-Estate-Images/kitchen (7).jpg",
-                "/Real-Estate-Images/bedroom (12).jpg",
-                "/Real-Estate-Images/bedroom (11).jpg"
+                "/Real-Estate-Images/office (8).jpg",
+                "/Real-Estate-Images/office (9).jpg",
+                "/Real-Estate-Images/office (10).jpg",
+                "/Real-Estate-Images/office (11).jpg",
+                "/Real-Estate-Images/office (12).jpg",
+                "/Real-Estate-Images/office (13).jpg"
             ],
             "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
             "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
             "specifications": {
-                "area": 1200,
+                "area": 1500,
                 "bedrooms": 0,
                 "bathrooms": 2,
                 "furnishing": "Furnished",
                 "floor": 1,
                 "amenities": [
-                    "Chef's Kitchen, ",
-                    "Showroom Lighting, ",
-                    "Pantry"
+                    "5 Car space parking lot"
                 ]
             },
             "agent": {
-                "name": "Jordan Bell",
-                "phone": "+1 312-555-0199"
+                "name": "Jordan One",
+                "phone": "+1 312-885-0155"
             },
-            "dateListed": "2026-01-20"
+            "dateListed": "2026-01-25"
+        },
+        {
+            "id": "home-0011",
+            "title": "Executive Office Suite",
+            "category": "Rent",
+            "subCategory": "Commercial",
+            "type": "Office",
+            "isFeatured": false,
+            "price": 8000,
+            "location": {
+                "city": "New York",
+                "area": "Harlem",
+                "address": "39 Midrive Ave",
+                "coordinates": {
+                    "lat": 41.881,
+                    "lng": -87.623
+                }
+            },
+            "thumbnail": "/Real-Estate-Images/office (7).jpg",
+            "images": [
+                "/Real-Estate-Images/office (8).jpg",
+                "/Real-Estate-Images/office (9).jpg",
+                "/Real-Estate-Images/office (10).jpg",
+                "/Real-Estate-Images/office (11).jpg",
+                "/Real-Estate-Images/office (12).jpg",
+                "/Real-Estate-Images/office (13).jpg"
+            ],
+            "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
+            "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
+            "specifications": {
+                "area": 1500,
+                "bedrooms": 0,
+                "bathrooms": 2,
+                "furnishing": "Furnished",
+                "floor": 1,
+                "amenities": [
+                    "5 Car space parking lot"
+                ]
+            },
+            "agent": {
+                "name": "Jordan One",
+                "phone": "+1 312-885-0155"
+            },
+            "dateListed": "2026-01-25"
         },
         {
             "id": "home-0012",
@@ -536,7 +572,7 @@
                 "/Real-Estate-Images/l (3).jpg",
                 "/Real-Estate-Images/l (4).jpg",
                 "/Real-Estate-Images/bedroom (7).jpg",
-                "/Real-Estate-Images/bedroom(8).jpg"
+                "/Real-Estate-Images/bedroom (8).jpg"
             ],
             "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
             "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
@@ -557,6 +593,140 @@
                 "phone": "+1 312-555-0199"
             },
             "dateListed": "2026-01-20"
-        }
+        },
+            {
+                "id": "home-0013",
+                "title": "Culinary Cottage",
+                "category": "Rent",
+                "subCategory": "Commercial",
+                "type": "Apartment",
+                "isFeatured": false,
+                "price": 5500,
+                "location": {
+                    "city": "Los Angeles",
+                    "area": "West Indie",
+                    "address": "304 Culinary Estate",
+                    "coordinates": {
+                        "lat": 41.881,
+                        "lng": -45.623
+                    }
+                },
+                "thumbnail": "/Real-Estate-Images/k (2).jpg",
+                "images": [
+                    "/Real-Estate-Images/k (1).jpg",
+                    "/Real-Estate-Images/k (2).jpg",
+                    "/Real-Estate-Images/k (3).jpg",
+                    "/Real-Estate-Images/kitchen (7).jpg",
+                    "/Real-Estate-Images/bedroom (12).jpg",
+                    "/Real-Estate-Images/bedroom (11).jpg"
+                ],
+                "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
+                "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
+                "specifications": {
+                    "area": 1200,
+                    "bedrooms": 2,
+                    "bathrooms": 2,
+                    "furnishing": "Unfurnished",
+                    "floor": 1,
+                    "amenities": [
+                        "Chef's Kitchen, ",
+                        "Showroom Lighting, ",
+                        "Pantry"
+                    ]
+                },
+                "agent": {
+                    "name": "Jordan Bell",
+                    "phone": "+1 312-555-0199"
+                },
+                "dateListed": "2026-01-20"
+            },
+                {
+                    "id": "home-0014",
+                    "title": "Boutique Shop",
+                    "category": "Rent",
+                    "subCategory": "Commercial",
+                    "type": "Shop",
+                    "isFeatured": false,
+                    "price": 4999.99,
+                    "location": {
+                        "city": "Chicago",
+                        "area": "West Loop",
+                        "address": "240 Culinary Plaza",
+                        "coordinates": {
+                            "lat": 41.881,
+                            "lng": -87.623
+                        }
+                    },
+                    "thumbnail": "/Real-Estate-Images/store (1).jpg",
+                    "images": [
+                        "/Real-Estate-Images/store (2).jpg",
+                        "/Real-Estate-Images/store (1).jpg",
+                        "/Real-Estate-Images/store (3).jpg"
+                    ],
+                    "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
+                    "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
+                    "specifications": {
+                        "area": 1700,
+                        "bedrooms": 0,
+                        "bathrooms": 2,
+                        "furnishing": "Furnished",
+                        "floor": 1,
+                        "amenities": [
+                            "Showroom Lighting, ",
+                            "Mini Warehouse"
+                        ]
+                    },
+                    "agent": {
+                        "name": "Thomas Ali",
+                        "phone": "+1 312-465-0199"
+                    },
+                    "dateListed": "2026-01-20"
+                },
+                {
+                    "id": "home-0015",
+                    "title": "Scandi-Style Mansion",
+                    "category": "Sale",
+                    "subCategory": "Residential",
+                    "type": "Apartment",
+                    "isFeatured": false,
+                    "price": 20000,
+                    "location": {
+                        "city": "Uppsala",
+                        "area": "Södem",
+                        "address": "Skåne 08",
+                        "coordinates": {
+                            "lat": 59.332,
+                            "lng": 18.068
+                        }
+                    },
+                    "thumbnail": "/Real-Estate-Images/e (1).jpg",
+                    "images": [
+                        "/Real-Estate-Images/e (1).jpg",
+                        "/Real-Estate-Images/e (2).jpg",
+                        "/Real-Estate-Images/e (3).jpg",
+                        "/Real-Estate-Images/e (4).jpg",
+                        "/Real-Estate-Images/bedroom (4).jpg",
+                        "/Real-Estate-Images/kitchen (6).jpg"
+                    ],
+                    "shortDescription": "Bright, airy Nordic design featuring a white timber ladder and mezzanine level.",
+                    "fullDescription": "A beautiful example of Scandinavian minimalism. This loft features light wood flooring, high ceilings, and a functional mezzanine perfect for a home office.",
+                    "specifications": {
+                        "area": 720,
+                        "bedrooms": 2,
+                        "bathrooms": 1,
+                        "furnishing": "Unfurnished",
+                        "floor": 3,
+                        "amenities": [
+                            "Mezzanine, ",
+                            "Natural Light, ",
+                            "Laminate Flooring"
+                        ]
+                    },
+                    "agent": {
+                        "name": "Lars Svensson",
+                        "phone": "+46 8 555 123"
+                    },
+                    "dateListed": "2026-03-05"
+                }
     ]
 }
