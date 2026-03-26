@@ -2,7 +2,7 @@
 
 
 :root {
-  font-family: system-ui, Plus Jakarta Sans, Helvetica, Arial, sans-serif;
+  font-family: system-ui, Lato, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   --btnBackground: #212121;
   --title: #000000d5;
@@ -42,6 +42,7 @@ a {
 
 p{
   font-size: 18px;
+  font-family: "Lato", sans-serif;
 }
 
 .type{
@@ -52,6 +53,7 @@ p{
 li{
   list-style: none;
   cursor: pointer;
+  font-family: "Lato", sans-serif;
   color: var(--btnColor);
   scroll-behavior: smooth;
   transition: 0.3s ease-in;
