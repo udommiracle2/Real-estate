@@ -460,50 +460,6 @@
             },
             "dateListed": "2026-01-25"
         },
-  {
-            "id": "home-0011",
-            "title": "Executive Office Suite",
-            "category": "Rent",
-            "subCategory": "Commercial",
-            "type": "Office",
-            "isFeatured": false,
-            "price": 8000,
-            "location": {
-                "city": "New York",
-                "area": "Harlem",
-                "address": "39 Midrive Ave",
-                "coordinates": {
-                    "lat": 41.881,
-                    "lng": -87.623
-                }
-            },
-            "thumbnail": "/Real-Estate-Images/office (7).jpg",
-            "images": [
-                "/Real-Estate-Images/office (8).jpg",
-                "/Real-Estate-Images/office (9).jpg",
-                "/Real-Estate-Images/office (10).jpg",
-                "/Real-Estate-Images/office (11).jpg",
-                "/Real-Estate-Images/office (12).jpg",
-                "/Real-Estate-Images/office (13).jpg"
-            ],
-            "shortDescription": "Premium showroom or corporate suite with designer kitchen and dark wood finishes.",
-            "fullDescription": "This commercial space is ideal for high-end boutique offices or culinary studios. Features include a granite-topped island, crystal pendant lighting, and professional-grade stainless steel appliances.",
-            "specifications": {
-                "area": 1500,
-                "bedrooms": 0,
-                "bathrooms": 2,
-                "furnishing": "Furnished",
-                "floor": 1,
-                "amenities": [
-                    "5 Car space parking lot"
-                ]
-            },
-            "agent": {
-                "name": "Jordan One",
-                "phone": "+1 312-885-0155"
-            },
-            "dateListed": "2026-01-25"
-        },
         {
             "id": "home-0011",
             "title": "Executive Office Suite",
@@ -553,13 +509,13 @@
             "title": "Executive Culinary Suite",
             "category": "Rent",
             "subCategory": "Commercial",
-            "type": "Office",
+            "type": "Apartment",
             "isFeatured": false,
             "price": 5500,
             "location": {
-                "city": "Chicago",
-                "area": "West Loop",
-                "address": "500 Culinary Plaza",
+                "city": "Vancouver",
+                "area": "Montreal",
+                "address": "500 Timothy Street",
                 "coordinates": {
                     "lat": 41.881,
                     "lng": -87.623
