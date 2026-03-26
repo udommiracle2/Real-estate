@@ -120,11 +120,11 @@ const Navbar = ({setFilters}) => {
                             bg-black/95 fixed inset-0 w-full h-screen z-40 flex-col justify-center items-center lg:hidden`}
                     >
                         <ul className="openMenu flex flex-col font-medium p-6 gap-8 text-center text-white text-3xl">
-                            <li onClick={toggleMenu}>Home</li>
-                            <li onClick={toggleMenu}>Buy/Rent Properties</li>
-                            <li onClick={toggleMenu}>About Us</li>
-                            <li onClick={toggleMenu}>Services</li>
-                            <li onClick={toggleMenu}>Contact Us</li>
+                            <li onClick={toggleMenu}><a href="#">Home</a></li>
+                            <li onClick={toggleMenu}><a href="#property">Buy/Rent Properties</a></li>
+                            <li onClick={toggleMenu}><a href="#about">About Us</a></li>
+                            <li onClick={toggleMenu}><a href="#feedback">Feedback</a></li>
+                            <li onClick={toggleMenu}><a href="#contact">Contact Us</a></li>
                         </ul>
                     </nav>
                 </header>

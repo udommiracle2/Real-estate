@@ -69,7 +69,7 @@ const PropertyPage = ({ filters }) => {
                     Buy/Rent Properties
                 </h3>
 
-                <div className="view flex gap-3 text-xs">
+                <div className="view hidden md:flex lg:flex gap-3 text-xs">
                     <i onClick={() => listBtn("grid")} class="fa-solid fa-grip mr-1.5"></i>
                     <i onClick={() => listBtn("list")} class="fa-solid fa-list"></i>
                 </div>
