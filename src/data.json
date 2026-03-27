@@ -33,7 +33,7 @@
                 "area": 4500,
                 "bedrooms": 5,
                 "bathrooms": 6,
-                "furnishing": "Furnished",
+                "furnishing": "furnished",
                 "floor": 2,
                 "amenities": [
                     "Pool,",
@@ -81,7 +81,7 @@
                 "area": 6200,
                 "bedrooms": 6,
                 "bathrooms": 5,
-                "furnishing": "Unfurnished",
+                "furnishing": "unfurnished",
                 "floor": 2,
                 "amenities": [
                     "3-Car Garage, ",
@@ -128,7 +128,7 @@
                 "area": 850,
                 "bedrooms": 1,
                 "bathrooms": 1,
-                "furnishing": "Semi-Furnished",
+                "furnishing": "furnished",
                 "floor": 4,
                 "amenities": [
                     "Smart Lighting, ",
@@ -175,7 +175,7 @@
                 "area": 720,
                 "bedrooms": 2,
                 "bathrooms": 1,
-                "furnishing": "Unfurnished",
+                "furnishing": "unfurnished",
                 "floor": 3,
                 "amenities": [
                     "Mezzanine, ",
@@ -267,7 +267,7 @@
                 "area": 3000,
                 "bedrooms": 7,
                 "bathrooms": 6,
-                "furnishing": "Furnished",
+                "furnishing": "furnished",
                 "floor": 2,
                 "amenities": [
                     "Pool, ",
@@ -315,7 +315,7 @@
                 "area": 7500,
                 "bedrooms": 6,
                 "bathrooms": 5,
-                "furnishing": "Unfurnished",
+                "furnishing": "unfurnished",
                 "floor": 2,
                 "amenities": [
                     "3-Car Garage, ",
@@ -362,7 +362,7 @@
                 "area": 850,
                 "bedrooms": 3,
                 "bathrooms": 2,
-                "furnishing": "Semi-Furnished",
+                "furnishing": "furnished",
                 "floor": 4,
                 "amenities": [
                     "Smart Lighting, ",
@@ -409,7 +409,7 @@
                 "area": 720,
                 "bedrooms": 2,
                 "bathrooms": 1,
-                "furnishing": "Unfurnished",
+                "furnishing": "unfurnished",
                 "floor": 3,
                 "amenities": [
                     "Mezzanine, ",
@@ -456,7 +456,7 @@
                 "area": 1500,
                 "bedrooms": 0,
                 "bathrooms": 2,
-                "furnishing": "Furnished",
+                "furnishing": "furnished",
                 "floor": 1,
                 "amenities": [
                     "Taj Accessories, ",
@@ -503,7 +503,7 @@
                 "area": 1500,
                 "bedrooms": 0,
                 "bathrooms": 2,
-                "furnishing": "Furnished",
+                "furnishing": "furnished",
                 "floor": 1,
                 "amenities": [
                     "5 Car space parking lot"
@@ -548,7 +548,7 @@
                 "area": 1200,
                 "bedrooms": 0,
                 "bathrooms": 2,
-                "furnishing": "Furnished",
+                "furnishing": "furnished",
                 "floor": 1,
                 "amenities": [
                     "Chef's Kitchen, ",
@@ -595,7 +595,7 @@
                     "area": 1200,
                     "bedrooms": 2,
                     "bathrooms": 2,
-                    "furnishing": "Unfurnished",
+                    "furnishing": "unfurnished",
                     "floor": 1,
                     "amenities": [
                         "Chef's Kitchen, ",
@@ -639,7 +639,7 @@
                         "area": 1700,
                         "bedrooms": 0,
                         "bathrooms": 2,
-                        "furnishing": "Furnished",
+                        "furnishing": "furnished",
                         "floor": 1,
                         "amenities": [
                             "Showroom Lighting, ",
@@ -685,7 +685,7 @@
                         "area": 720,
                         "bedrooms": 2,
                         "bathrooms": 1,
-                        "furnishing": "Unfurnished",
+                        "furnishing": "unfurnished",
                         "floor": 3,
                         "amenities": [
                             "Mezzanine, ",

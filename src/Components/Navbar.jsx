@@ -7,13 +7,13 @@ import { useEffect } from "react";
 const Navbar = ({setFilters}) => {
     const [location, setLocation] = useState("");
     const [type, setType] = useState("");
+    const [category, setCategory] = useState("");
     const [search, setSearch] = useState("");
     const [minPrice, setMinPrice] = useState(0);
     const [maxPrice, setMaxPrice] = useState(10000000);
     const [minBedroom, setMinBedroom] = useState(0);
     const [maxBedroom, setMaxBedroom] = useState(10);
     const [minBathrooms, setMinBathrooms] = useState(0);
-    const [furnishing, setFurnishing] = useState("");
     const [maxBathrooms, setMaxBathrooms] = useState(10);
     const [setTitle] = useState("");
 
@@ -22,7 +22,7 @@ const Navbar = ({setFilters}) => {
         e.preventDefault();
         const formData = new FormData(e.target);
         const searchValue = formData.get("search");
-        setFilters({ location, type, furnishing, minPrice, maxPrice, minBedroom, maxBedroom, minBathrooms, maxBathrooms, search: searchValue, title: searchValue });
+        setFilters({ location, type, category, minPrice, maxPrice, minBedroom, maxBedroom, minBathrooms, maxBathrooms, search: searchValue, title: searchValue });
     };
 
 
@@ -161,7 +161,7 @@ const Navbar = ({setFilters}) => {
                             <select
                                 onChange={(e) => setType(e.target.value)}
                                 className="px-2 py-1 mt-1 mr-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg">
-                                <option>All</option>
+                                <option value="">All</option>
                                 <option>Apartment</option>
                                 <option>Villa</option>
                                 <option>Plot</option>
@@ -169,22 +169,14 @@ const Navbar = ({setFilters}) => {
                                 <option>Shop</option>
                             </select>
                             <select className='px-2 py-1 mt-2 mr-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg'
-                                onChange={(e) => setType(e.target.value)}>
+                                onChange={(e) => setCategory(e.target.value)}>
                                 <option value="">All</option>
                                 <option value="rent">Rent</option>
                                 <option value="sale">Sale</option>
                             </select>
-
-                            <select className='px-2 py-1 mt-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-lg'
-                                onChange={(e) => setFurnishing(e.target.value)}>
-                                <option value="">All</option>
-                                <option value="finished">Finished</option>
-                                <option value="unfinished">Unfinished</option>
-                            </select>
-
                         </div>
 
-                       
+                        
                         <div className="slider flex flex-col justify-center items-start">
                             <label className="text-left">Price Range</label>
 

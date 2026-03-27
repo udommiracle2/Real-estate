@@ -19,12 +19,12 @@ const PropertyPage = ({ filters }) => {
 
 
     const filteredProperties = properties.filter((property) => {
-
-        const matchLocation = `${property.location.city} ${property.location.area} ${property.location.address}`.toLowerCase().includes((filters.location || "").toLowerCase());
         
-        const matchType = filters.type ? property.type.toLowerCase() === filters.type.toLowerCase(): true;
+        const matchLocation = `${property.location.city} ${property.location.area} ${property.location.address}`.toLowerCase().includes((filters.location || "").toLowerCase());
 
-        const matchFurnishing = filters.furnishing ? property.specifications.furnishing.toLowerCase() === filters.furnishing.toLowerCase(): true;
+        const matchCategory = !filters.category || filters.category === "" ? true : property.category.toLowerCase() === filters.category.toLowerCase();
+
+        const matchType = !filters.type || filters.type === "" ? true : property.type.toLowerCase() === filters.type.toLowerCase();
 
         const matchPrice = property.price >= (filters.minPrice ?? 0) && property.price <= (filters.maxPrice ?? 10000000);
 
@@ -34,24 +34,12 @@ const PropertyPage = ({ filters }) => {
 
         const searchValue = (filters.search || "").toLowerCase().trim();
 
-        const searchableText = `
-                ${property.title}
-                ${property.location.city}
-                ${property.location.area}
-                ${property.location.address}
-                ${property.category}
-                ${property.type}
-                ${property.specifications.bedrooms}bhk
-                ${property.specifications.bedrooms} bedroom
-                ${property.specifications.bathrooms} bathroom
-                ${property.specifications.amenities}
-                ${property.specifications.furnishing}
-                `.toLowerCase();
+        const searchableText = `${property.title} ${property.location.city} ${property.location.area} ${property.location.address} ${property.category} ${property.type} ${property.specifications.bedrooms} ${property.specifications.bathrooms} ${property.specifications.amenities} ${property.specifications.furnishing}`
+            .toLowerCase();
 
         const matchSearch = searchableText.includes(searchValue);
-        
-        
-        return matchLocation && matchType && matchFurnishing && matchPrice && matchBedroom && matchBathrooms && matchSearch;
+
+        return matchLocation && matchType && matchCategory && matchPrice && matchBedroom && matchBathrooms && matchSearch;
     });
 
     const totalPages = Math.ceil(filteredProperties.length / propertiesPerPage);
@@ -106,6 +94,10 @@ const PropertyPage = ({ filters }) => {
 
                                 <p className="text-gray-500 text-sm">
                                     {property.location.area}, {property.location.city}, {property.location.address}
+                                </p>
+
+                                <p className="text-end">
+                                    <span className="font-semibold">Category: </span>{property.category}
                                 </p>
 
                                 <div className="flex gap-3 mt-3 text-sm">
