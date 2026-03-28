@@ -294,6 +294,16 @@ const Navbar = ({setFilters}) => {
                 </div>
                 
             </section>
+
+            <div
+                className="navigationTop"
+                onClick={() => { window.scrollTo({ top: 0, behavior: 'smooth' });
+                    document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
+                    document.body.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+            >
+                <i className="fa-solid fa-arrow-up"></i>
+            </div>
         </div>
     );
 }
